@@ -1,0 +1,72 @@
+@use 'reset';
+@use 'fonts';
+
+
+body{
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: 'Lato-Regular';
+  font-weight: 400;
+  color: #3c3c3c;
+  line-height: 115%;
+  font-size: 18px;
+}
+.header{
+  padding: 29px 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__inner{
+    display: flex;
+    align-items: center;
+  }
+  &__info{
+    padding: 9px 0;
+    margin-right: 28px;
+    font-family: 'Lato-SemiBold',sans-serif;
+    line-height: 107%;
+    font-weight: 600;
+  }
+  &__phone{
+    font-size: 24px;
+    margin-bottom: 5px;
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      left: -35px;
+      top: -3px;
+      width: 29px;
+      height: 29px;
+      background-image: url('../images/phone-black.svg');
+    }
+  }
+  &__time{
+    text-align: right;
+    font-size: 17px;
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      left: 67px;
+      top: 2px;
+      background-image: url('../images/clock.svg');
+    }
+  }
+  &__btn{
+    border: none;
+    padding: 0;
+    font-size: 0;
+    background-color: #12c10c;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 20px;
+    transition: all .5s;
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+}
+
