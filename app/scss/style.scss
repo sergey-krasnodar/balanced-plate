@@ -185,16 +185,16 @@ body{
     padding-top: 44px;
   }
   &__title{
-    font-family: Lato-Light,sans-serif;
+    font-family: 'Lato-Light';
     font-weight: 300;
     font-size: 50px;
     line-height: 1;
     margin-bottom: 40px;
-    max-width: 640px;
+    max-width: 600px;
   }
   &__text{
     max-width: 580px;
-    font-family: Lato-Regular, sans-serif;
+    font-family: 'Lato-Regular';
     line-height: 1.3;
     margin-bottom: 59px;
   }
@@ -216,19 +216,21 @@ body{
     border-radius: 37px;
     background: linear-gradient(94.86deg, #D1F187 5.55%, #EBFFBD 106.02%);
     backdrop-filter: blur(7.5px);
-    font-family: 'Lato-Bold',sans-serif;
-    font-weight: 700;
+    font-family: 'Lato-Bold';
     margin-bottom: 4px;
   }
   &__discount-btn{
+    font-family: 'Lato-Bold';
     border: none;
-    padding: 20px 58px;
+    padding: 20px 57px;
     background-color: #12c10c;
     border-radius: 18px;
-    margin: 0 20px;
     color: #fff;
-    font-size: 20px;
+    font-size: 26px;
+    margin-left: 20px;
+    cursor: pointer;
   }
+ 
   &__discount-text-2{
     text-transform: uppercase;
     color: #12c10c;
@@ -237,10 +239,85 @@ body{
     text-transform: uppercase;
   }
   &__correction{
-    font-family: 'Lato-SemiBold',sans-serif;
+    font-family: 'Lato-Medium';
     font-size: 23px;
     color: #b3b3b3;
     margin-left: 95px;
+    margin-bottom: 77px;
+    line-height: 127%;
   }
+}
+
+.top-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__title{
+    padding-top: 72px;
+    font-family: 'Lato-Bold',sans-serif;
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  &__item{
+    max-width: 295px;
+    margin-bottom: 72px;
+    padding: 20px;
+    border: 1px solid #d8d8d8;
+    border-radius: 20px;
+  }
+  &__item-title{
+    padding: 18px 0 18px 29px;
+    font-size: 20px;
+    font-family: 'Lato-Black',sans-serif;
+    margin-bottom: 15px;
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: 0;
+      font-family: 'Lato-Light';
+      color: #12c10c;
+      font-size: 30px;
+      line-height: 140%;
+    }
+    &::after{
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 57px;
+      height: 57px;
+    }
+    
+  }
+
+}
+.top-box__item-title--1::after {
+  background-image: url('../images/calculator.svg');
+}
+.top-box__item-title--1::before{
+  content: "1";
+}
+.top-box__item-title--2::after {
+  background-image: url('../images/salat.svg');
+}
+
+.top-box__item-title--2::before {
+  content: "2";
+}
+.top-box__item-title--3::after {
+  background-image: url('../images/delivery.svg');
+}
+
+.top-box__item-title--3::before {
+  content: "3";
+}
+.top-box__item-title--4::after {
+  background-image: url('../images/oven.svg');
+}
+
+.top-box__item-title--4::before {
+  content: "4";
 }
 
