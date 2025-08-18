@@ -10,35 +10,44 @@
 
 <body>
   <header class="header">
-    <a class="logo__link" href="#">
-      <img class="logo__img" src="images/logo.svg" alt="Логотип">
-    </a>
-    <div class="header__inner">
-      <div class="header__info">
-        <p class="header__phone">+7 988 740 5533</p>
-        <p class="header__time">9:00 - 21:00</p>
+    <div class="header__wrapper">
+      <a class="logo__link" href="#">
+        <img class="logo__img" src="images/logo.svg" alt="Логотип">
+      </a>
+      <div class="header__inner">
+        <div class="header__info">
+          <p class="header__phone">+7 988 740 5533</p>
+          <p class="header__time">9:00 - 21:00</p>
+        </div>
+        <button data-open-btn class="header__btn">
+          <img class="header__btn-phone" src="images/phone-white.svg" alt="Кнопка телефон">
+        </button>
       </div>
-      <button class="header__btn">
-        <img class="header__btn-phone" src="images/phone-white.svg" alt="Кнопка телефон">
-      </button>
     </div>
   </header>
-  <main class="main">
-    <div class="container">
-      <div class="modal-phone">
+  <main>
+    <dialog id="modal" class="modal-phone">
+      <div class="modal-phone__inner">
         <div class="modal-phone__info">
-          <h4 class="modal-phone__title">
+          <h5 class="modal-phone__title">
             Оставьте ваш
             номер телефона
-            <span>и наш оператор перезвонит вам</span>
-          </h4>
+          </h5>
+          <p class="modal-phone__subtitle">и наш оператор перезвонит вам</p>
           <img class="modal-phone__img" src="images/operator.jpg" alt="Оператор">
         </div>
-        
+        <form class="modal-phone__form">
+          <p class="modal-phone__text">Номер телефона</p>
+          <input class="modal-phone__input" type="phone" placeholder="+7">
+          <p class="modal-phone__text">Ваше имя</p>
+          <input class="modal-phone__input" type="text" placeholder="Ваше имя">
+          <button class="modal-phone__btn">
+            Заказать звонок
+          </button>
+        </form>
       </div>
-    </div>
+    </dialog>
   </main>
-
 
   <script src="js/main.min.js"></script>
 </body>
