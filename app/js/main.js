@@ -10,3 +10,7 @@ btnOpen.addEventListener('click', () =>{
 modalPhone.addEventListener('click', (e) => {
   if (e.target === modalPhone) modalPhone.close()
 })
+
+
+
+  
