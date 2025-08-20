@@ -347,7 +347,7 @@ body{
   &__item{
     width: 398px;
     text-align: left;
-    background-color: #ccc;
+    background-color: #fff;
     border-radius: 20px;
     font-family: 'Lato-Black';
     text-transform: uppercase;
@@ -383,10 +383,20 @@ body{
     .program__span{
       color: #fff;
     }
+    .svg defs{
+    display: none;
+    }
+    .svg path{
+      color: #fff;
+      z-index: 1;
+    }
+    
+    
     
   }
   
-}  
+} 
+
   
 
 
