@@ -353,6 +353,7 @@ body{
     text-transform: uppercase;
     padding: 20px;
   }
+   
   &__item-text{
     padding: 13px 0 3px;
     font-size: 15px;
@@ -361,11 +362,34 @@ body{
     font-size: 13px;
     color: #9d9d9d;
   }
-  
-  &__item svg:hover{
-    color: #fff;
+  &__item{
+    position: relative;
+    transition: all .3s;
   }
-}
+  
+  &__item:hover{
+    color: #fff;
+    background-color: #12c10c;
+  }
+  &__item-detox::after{
+    content: "";
+    position: absolute;
+    width: 166px;
+    height: 132px;
+    right: 20px;
+    bottom: -8px;
+    background-image: url('../images/program/detox.png');
+    background-repeat: no-repeat;
+  }
+}  
+  
+
+
+  
+  
+
+
+
 
 
 
