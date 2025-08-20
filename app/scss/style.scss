@@ -361,26 +361,31 @@ body{
   &__span{
     font-size: 13px;
     color: #9d9d9d;
+    transition: all .5s;
   }
   &__item{
     position: relative;
-    transition: all .3s;
-  }
-  
-  &__item:hover{
-    color: #fff;
-    background-color: #12c10c;
+    transition: all .2s;
   }
   &__item-detox::after{
     content: "";
     position: absolute;
-    width: 166px;
-    height: 132px;
+    width: 167px;
+    height: 124px;
     right: 20px;
-    bottom: -8px;
-    background-image: url('../images/program/detox.png');
+    bottom: 0;
+    background-image: url('../images/program/detox.svg');
     background-repeat: no-repeat;
   }
+  &__item:hover{
+    color: #fff;
+    background-color: #12c10c;
+    .program__span{
+      color: #fff;
+    }
+    
+  }
+  
 }  
   
 
