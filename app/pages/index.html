@@ -26,27 +26,7 @@
     </div>
   </header>
   <main>
-    <dialog id="modal" class="modal-phone">
-      <div class="modal-phone__inner">
-        <div class="modal-phone__info">
-          <h5 class="modal-phone__title">
-            Оставьте ваш
-            номер телефона
-          </h5>
-          <p class="modal-phone__subtitle">и наш оператор перезвонит вам</p>
-          <img class="modal-phone__img" src="images/operator.jpg">
-        </div>
-        <form class="modal-phone__form">
-          <p class="modal-phone__text">Номер телефона</p>
-          <input class="modal-phone__input" type="phone" placeholder="+7">
-          <p class="modal-phone__text">Ваше имя</p>
-          <input class="modal-phone__input" type="text" placeholder="Ваше имя">
-          <button class="modal-phone__btn">
-            Заказать звонок
-          </button>
-        </form>
-      </div>
-    </dialog>
+    <!--=include modal-phone.html-->
     <section class="top">
       <div class="container">
         <div class="top__inner">
@@ -118,58 +98,54 @@
           <div class="program__item">
             <!--=include live.html-->
             <p class="program__item-text">
-              НЕ ХОЧУ
+              НЕ ХОЧУ<br>
               ГОТОВИТЬ
             </p>
-            <p class="program__span">1500 ККЛ</p>
+            <span class="program__span">1500 ККЛ</span>
+            <img class="program__item-img program__item-img-life" src="images/program/life.svg">
           </div>
           <div class="program__item">
-            <svg width="145" height="48">
-              <use xlink: href="images/sprite.svg#sport"></use>
-            </svg>
+            <!--=include sport.html-->
             <p class="program__item-text">
               ДЛЯ
               СПОРТСМЕНОВ
             </p>
-            <p class="program__span">1800 - 2000 ККЛ</p>
+            <span class="program__span">1800 - 2000 ККЛ</span>
+            <img class="program__item-img" src="images/program/sport.svg">
           </div>
           <div class="program__item">
-            <svg width="340" height="54">
-              <use xlink: href="images/sprite.svg#vegetarian"></use>
-            </svg>
+            <!--=include vegetarian.html-->
             <p class="program__item-text">
               ИСКЛЮЧАЕМ
               МЯСО
             </p>
-            <p class="program__span">1200 - 1500 ККЛ</p>
+            <span class="program__span">1200 - 1500 ККЛ</span>
+            <img class="program__item-img" src="images/program/vegetarian.svg">
           </div>
           <div class="program__item">
-            <svg width="87" height="55">
-              <use xlink: href="images/sprite.svg#fit"></use>
-            </svg>
+            <!--=include fit.html-->
             <p class="program__item-text">
               Хочу
               похудеть
             </p>
-            <p class="program__span">1800 - 2000 ККЛ</p>
+            <span class="program__span">1800 - 2000 ККЛ</span>
+            <img class="program__item-img" src="images/program/fit.svg">
           </div>
           <div class="program__item">
-            <svg width="177" height="51">
-              <use xlink: href="images/sprite.svg#health"></use>
-            </svg>
+            <!--=include health.html-->
             <p class="program__item-text">
               НУЖНА ОСОБАЯ
               ДИЕТА
             </p>
+            <img class="program__item-img" src="images/program/health.svg">
           </div>
-          <div class="program__item program__item-detox">
-            <svg width="170" height="54">
-              <use xlink: href="images/sprite.svg#detox"></use>
-            </svg>
+          <div class="program__item">
+            <!--=include detox.html-->
             <p class="program__item-text">
               Чистим
               организм
             </p>
+            <img class="program__item-img" src="images/program/detox.svg">
           </div>
         </div>
       </div>
