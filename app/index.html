@@ -89,10 +89,11 @@
               питание на каждый день
             </h1>
             <p class="top__text">
-              Правильное и здоровое питание стало доступно как никогда. Сосредотомтесь на ВАЖНОМ, а о правильном питании позаботимся мы!
+              Правильное и здоровое питание стало доступно как никогда. Сосредотомтесь на ВАЖНОМ, а о правильном питании
+              позаботимся мы!
             </p>
             <div class="top__discount">
-              <button class="top__discount-btn">Попробуй сейчас</button>
+              <button class="top__discount-btn discount-btn">Попробуй сейчас</button>
               <div class="top__discount-program">
                 <p class="top__discount-text-1">Программа</p>
                 <p class="top__discount-text-2">знакомство</p>
@@ -784,7 +785,7 @@
               <option class="ration__option" value="health">Пример рациона: HEALTH</option>
               <option class="ration__option" value="detox">Пример рациона: DETOX</option>
             </select>
-          </div> 
+          </div>
           <p class="ration__text">
             LIFE - программа калорийностью 1400-1500 в день сделана специально для активных и жизнерадостных
             пользователей!
@@ -840,91 +841,54 @@
             <p class="ration-slider__calories">165 ккал</p>
           </div>
         </div>
-        <p class="ration__info">По программе “Знакомство” От 6000 AMD в день</p>
-        <button class="ration__btn">ХОЧУ ТАК ПИТАТЬСЯ</button>
-        <button class="ration__setting">Настроить меню</button>
+        <div class="ration__bottom">
+          <p class="ration__info">По программе  <button class="ration__discount discount-btn">“Знакомство”</button> От 6000 AMD в день</p>
+          <button class="ration__btn discount-btn">ХОЧУ ТАК ПИТАТЬСЯ</button>
+          <button class="ration__setting">Настроить меню</button>
+        </div>
       </div>
     </section>
   </main>
 
   <dialog class="modal-discount">
-
     <div class="modal-discount__wrapper">
-
       <img class="modal-discount__img" src="images/discount1.svg" alt="20%">
-
       <h3 class="modal-discount__title">
-
         ПРОГРАМА ЗНАКОМСТВО
-
       </h3>
-
       <p class="modal-discount__text">
-
         Для новых клиентов мы прелагаем
-
         знакомство с сервисом со скидкой.
-
         Что бы получить скидку просто заполните форму ниже.
-
       </p>
-
       <form class="modal-discount__form">
-
         <label class="modal-discount__label" for="tel">
-
           Номер телефона*
-
         </label>
-
         <input class="modal-discount__input" type="text" placeholder="+7">
-
         <label class="modal-discount__label" for="name">
-
           Ваше имя*
-
         </label>
-
         <input class="modal-discount__input" type="text" placeholder="Ваше имя">
-
         <label class="modal-discount__label" for="text">
-
           Прогрма питания
-
         </label>
-
         <div class="modal-discount__inner">
-
           <select class="modal-discount__select">
-
             <option class="modal-discount__option" value="life">LIFE</option>
-
             <option class="modal-discount__option" value="sport">SPORT</option>
-
             <option class="modal-discount__option" value="vegetarian">VEGETARIAN</option>
-
             <option class="modal-discount__option" value="fit">FIT</option>
-
             <option class="modal-discount__option" value="health">HEALTH</option>
-
             <option class="modal-discount__option" value="detox">DETOX</option>
-
             <option class="modal-discount__option" value="medical">Медицинское питание</option>
-
           </select>
-
         </div>
-
         <button class="modal-discount__btn">
-
           Получить скидку 20%
-
         </button>
-
       </form>
-
     </div>
-
   </dialog>
   <script src="js/main.min.js"></script>
 </body>
