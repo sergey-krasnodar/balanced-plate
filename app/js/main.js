@@ -1,14 +1,22 @@
 
-const btnOpen = document.querySelector('.header__btn-phone'); 
+const btnPhoneOpen = document.querySelector('.header__btn-phone'); 
 const modalPhone = document.getElementById('modal'); 
-
-btnOpen.addEventListener('click', () =>{
-
+btnPhoneOpen.addEventListener('click', () =>{
   modalPhone.showModal()
 })
-
 modalPhone.addEventListener('click', (e) => {
   if (e.target === modalPhone) modalPhone.close()
 })
+
+const btnDiscountOpen = document.querySelector('.top__discount-btn'); 
+const modalDiscount = document.querySelector('.modal-discount'); 
+btnDiscountOpen.addEventListener('click', () =>{
+  modalDiscount.showModal()
+})
+modalDiscount.addEventListener('click', (e) => {
+  console.log(e);
+  if (e.target === modalDiscount) modalDiscount.close()
+})
+
 
  
