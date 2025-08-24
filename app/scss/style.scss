@@ -19,6 +19,8 @@ body{
 .title{
   font-family: 'Lato-Black';
   font-size: 40px;
+  line-height: 88%;
+  color: #3C3C3C;
 }
 
 .modal-phone {
@@ -653,6 +655,58 @@ body{
     font-size: 16px;
   }
 }
+
+.medical{
+  &__top {
+    display: flex;
+  }
+  &__top-content{
+    max-width: 550px;
+    margin-left: 200px;
+    padding-top: 20px;
+    margin-bottom: 100px;
+  }
+  &__top-title{
+    margin-bottom: 50px;
+  }
+  &__top-text{
+    max-width: 535px;
+    font-family: 'Lato-Light';
+    font-size: 25px;
+    line-height: 120%;
+    color: #000;
+    margin-bottom: 30px;
+  }
+  &__top-text span{
+    font-family: 'Lato-Medium';
+    color: #12c10c;
+    text-decoration: underline;
+  }
+  &__top-btn{
+    border: none;
+    color: #fff;
+    background-color: #F03538;
+    border-radius: 30px;
+    padding: 20px 30px;
+    font-family: 'Lato-Bold';
+    font-size: 26px;
+    line-height: 100%;
+  }
+  &__top-img-box{
+    position: relative;
+    width: 426px;
+  }
+  &__top-img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 426px;
+    height: 506px;
+  }
+}
+
+
+
 
   
 

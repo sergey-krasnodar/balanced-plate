@@ -852,12 +852,29 @@
     <section class="medical">
       <div class="container">
         <div class="medical__top">
-          <div class="medical__content"></div>
-          <div class="medical__img"></div>
+          <div class="medical__top-content">
+            <h2 class="medical__top-title title">
+              Диеты по медицинским показаниям
+            </h2>
+            <p class="medical__top-text">
+              Для людей с различными заболеваниями и нуждающихся в особой диете на каждый день. Наши диетологи
+              разработали<br>
+              <span>15 уникальных диет</span> на все случаи жизни
+            </p>
+            <p class="medical__top-text">
+              Если вам нужна индивидуальная программа питания, просто свяжитесь с нами и мы поможем подобрать диету
+            </p>
+            <button class="medical__top-btn discount-btn">
+              Заказать медицинское питание
+            </button>
+          </div>
+          <div class="medical__top-img-box">
+            <img class="medical__top-img" src="images/medical-bg.png" alt="foto">
+          </div>
         </div>
         <div class="medical__bottom">
           <div class="medical__inner">
-            <h2 class="medical__title title">
+            <h2 class="medical__title">
               ПРИМЕР ДНЕВНОГО РАЦИОНА ПО МЕДИЦИНСКИМ ПОКАЗАНИЯМ
             </h2>
             <div class="medical__choice">
@@ -931,44 +948,83 @@
   </main>
 
   <dialog class="modal-discount">
+
     <div class="modal-discount__wrapper">
+
       <img class="modal-discount__img" src="images/discount1.svg" alt="20%">
+
       <h3 class="modal-discount__title">
+
         ПРОГРАМА ЗНАКОМСТВО
+
       </h3>
+
       <p class="modal-discount__text">
+
         Для новых клиентов мы прелагаем
+
         знакомство с сервисом со скидкой.
+
         Что бы получить скидку просто заполните форму ниже.
+
       </p>
+
       <form class="modal-discount__form">
+
         <label class="modal-discount__label" for="tel">
+
           Номер телефона*
+
         </label>
+
         <input class="modal-discount__input" type="text" placeholder="+7">
+
         <label class="modal-discount__label" for="name">
+
           Ваше имя*
+
         </label>
+
         <input class="modal-discount__input" type="text" placeholder="Ваше имя">
+
         <label class="modal-discount__label" for="text">
+
           Прогрма питания
+
         </label>
+
         <div class="modal-discount__inner">
+
           <select class="modal-discount__select">
+
             <option class="modal-discount__option" value="life">LIFE</option>
+
             <option class="modal-discount__option" value="sport">SPORT</option>
+
             <option class="modal-discount__option" value="vegetarian">VEGETARIAN</option>
+
             <option class="modal-discount__option" value="fit">FIT</option>
+
             <option class="modal-discount__option" value="health">HEALTH</option>
+
             <option class="modal-discount__option" value="detox">DETOX</option>
+
             <option class="modal-discount__option" value="medical">Медицинское питание</option>
+
           </select>
+
         </div>
+
         <button class="modal-discount__btn">
+
           Получить скидку 20%
+
         </button>
+
       </form>
+
     </div>
+
   </dialog>
   <script src="js/main.min.js"></script>
 </body>
