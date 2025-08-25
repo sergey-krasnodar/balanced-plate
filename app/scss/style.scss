@@ -661,10 +661,10 @@ body{
     display: flex;
   }
   &__top-content{
-    max-width: 550px;
+    max-width: 570px;
     margin-left: 200px;
     padding-top: 20px;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
   }
   &__top-title{
     margin-bottom: 50px;
@@ -691,10 +691,20 @@ body{
     font-family: 'Lato-Bold';
     font-size: 26px;
     line-height: 100%;
+    cursor: pointer;
   }
   &__top-img-box{
     position: relative;
     width: 426px;
+    &::before{
+      content: "";
+      position: absolute;
+      width: 72px;
+      height: 70px;
+      left: -88px;
+      bottom: 80px;
+      background-image: url('../images/medical-perec.png');
+    }
   }
   &__top-img{
     position: absolute;
@@ -703,7 +713,220 @@ body{
     width: 426px;
     height: 506px;
   }
+  &__table{
+    padding: 40px;
+    max-width: 1081px;
+    margin: 0 auto;
+    background-color: #e4e4e4;
+    border-radius: 47px;
+  }
+  &__title{
+    text-align: center;
+    font-family: 'Lato-Medium';
+    margin-bottom: 30px;
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+  &__choice{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+  }
+  &__box-text{
+    width: 128px;
+  }
+  &__text{
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  &__choice-title{
+    font-family: 'Lato-SemiBold';
+    font-size: 24px;
+  }
+  &__select-box{
+    max-width: 781px;
+    position: relative;
+    &::after{
+      content: "";
+     position: absolute;
+     background-image: url('../images/select-arrow.svg');
+     background-repeat: no-repeat;
+     width: 21px;
+     height: 14px;
+     right: 20px;
+     top: 50%;
+     transform: translateY(-50%);
+     pointer-events: none;
+    }
+  }
+  &__select{
+    display: block;
+    width: 100%;
+    padding: 20px 50px 20px 20px;
+    background-color: #fff;
+    border-radius: 37px;
+    border: none;
+    appearance: none;
+    cursor: pointer;
+    outline: none;
+  }
+  &__buttons-days{
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid#a6a6a6;
+  }
+  &__btn-day{
+    border: none;
+    padding: 8px 20px;
+    background-color: #12c10c;
+    color: #fff;
+    border-radius: 39px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  &__btn-day--active{
+    background-color: #ababab;
+  }
+  &__slider{
+    padding: 25px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  &__slider-item{
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    min-height: 230px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px 10px;
+  }
+  &__slider-item-title{
+    font-family: 'Lato-Black';
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  &__slider-item-gram{
+    margin-top: auto;
+    color: #b3b3b3;
+  }
+  &__procent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 26px;
+  }
+  &__procent-item{
+    padding: 8px 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    border-radius: 40px;
+  }
+  &__procent-item-1{
+    background-color: skyblue;
+  }
+  &__procent-item-2{
+    background-color: orange;
+  }
+  &__procent-item-3{
+    background-color: #12c10c;
+  }
+  &__procent-item-bgu{
+    font-size: 16px;
+  }
+  &__procent-item-num{
+    font-family: 'Lato-Black';
+    font-size: 16px;
+  }
+  &__bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__bottom-discount{
+    max-width: 430px;
+    font-family: 'Lato-Medium';
+    font-size: 24px;
+    line-height: 1.2;
+    color: #000;
+  }
+  &__bottom-btn{
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    color: #12c10c;
+    text-transform: uppercase;
+    font-family: 'Lato-SemiBold';
+    cursor: pointer;
+  }
+  &__bottom-info{
+    font-family: 'Lato-Bold';
+    font-size: 20px;
+    max-width: 160px;
+    line-height: 1.2;
+  }
+  &__bottom-order{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50px;
+    width: 300px;
+    padding: 8px 8px 8px 30px;
+    font-family: 'Lato-Bold';
+  }
+  &__bottom-text-old{
+    text-decoration-line: line-through;
+    margin-bottom: 5px;
+  }
+  &__bottom-text-new{
+    font-size: 30px;
+  }
+  &__bottom-order-btn{
+    padding: 25px 25px;
+    color: #fff;
+    font-family: 'Lato-Bold';
+    font-size: 26px;
+    background-color: #F03538;
+    border-radius: 50px;
+    cursor: pointer;
+  }
 }
+.medical-top{
+  position: relative;
+  &__bg{
+    position: absolute;
+    bottom: -8px;
+    width: 2250px;
+    height: 217px;
+    background-image: url('../images/medical-decor.svg');
+    background-repeat: no-repeat;
+    background-position-x: -316px;
+    z-index: -1;
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    background-image: url('../images/medical-blur.png');
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 300px;
+    top: 0;
+    left: 190px;
+  }
+}
+.medical-bottom{
+  background-color: #14A80F;
+  border-bottom-left-radius: 99px;
+  border-bottom-right-radius: 99px;
+  padding-bottom: 80px;
+}
+
 
 
 
