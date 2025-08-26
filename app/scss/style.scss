@@ -229,7 +229,7 @@ body{
   &__wrapper{
     max-width: 1440px;
     margin: 0 auto;
-    padding: 29px 40px 20px;
+    padding: 20px 10px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -292,11 +292,13 @@ body{
 
 .icon-path{
   fill: #ccc;
+  transition: all .3s;
 }
 .social-icon {
   &__inner{
     display: flex;
     gap: 30px;
+    transition: all .3s;
   }
   &__link:hover{
     .icon-path{
@@ -385,7 +387,7 @@ body{
   justify-content: space-between;
   align-items: center;
   &__title{
-    padding-top: 177px;
+    padding-top: 150px;
     margin-bottom: 40px;
   }
   &__item{
@@ -453,12 +455,12 @@ body{
 
 
 .program{
-  padding: 80px 0;
+  padding: 70px 0;
   background-color: #dedede;
   text-align: center;
   font-family: 'Lato-Bold',sans-serif;
   &__title{
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
   &__text{
     font-family: 'Lato-Medium';
@@ -621,7 +623,7 @@ body{
 .ration-slider{
   display: flex;
   justify-content: space-around;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
   &__item{
     width: 250px;
     min-height: 460px;
@@ -909,22 +911,33 @@ body{
     background-position-x: -316px;
     z-index: -1;
   }
-  &::after{
-    content: "";
-    position: absolute;
-    background-image: url('../images/medical-blur.png');
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 300px;
-    top: 0;
-    left: 190px;
-  }
+ 
 }
 .medical-bottom{
   background-color: #14A80F;
   border-bottom-left-radius: 99px;
   border-bottom-right-radius: 99px;
   padding-bottom: 80px;
+}
+
+.reviews{
+  padding: 150px 150px;
+  background-color: #e4e4e4;
+  &__title{
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  &__slider{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  &__item{
+    width: 1000px;
+    min-height: 400px;
+    background-color: #fff;
+    border-radius: 50px;
+  }
 }
 
 
