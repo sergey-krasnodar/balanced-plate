@@ -1,19 +1,19 @@
 
-const btnPhoneOpen = document.querySelector('.header__btn-phone'); 
-const modalPhone = document.getElementById('modal'); 
+const btnPhoneOpen = document.querySelector('.header__btn-phone');
+const modalPhone = document.getElementById('modal');
 
-btnPhoneOpen.addEventListener('click', () =>{
+btnPhoneOpen.addEventListener('click', () => {
   modalPhone.showModal()
 })
 modalPhone.addEventListener('click', (e) => {
   if (e.target === modalPhone) modalPhone.close()
 })
 
-const btnDiscountOpen = document.querySelectorAll('.discount-btn'); 
-const modalDiscount = document.querySelector('.modal-discount'); 
+const btnDiscountOpen = document.querySelectorAll('.discount-btn');
+const modalDiscount = document.querySelector('.modal-discount');
 
 btnDiscountOpen.forEach(function (item) {
-  item.addEventListener('click', () =>{
+  item.addEventListener('click', () => {
     modalDiscount.showModal()
   })
   modalDiscount.addEventListener('click', (e) => {
@@ -22,12 +22,8 @@ btnDiscountOpen.forEach(function (item) {
   })
 })
 
-import Swiper from 'swiper';
-import 'swiper/css';
-const swiper = new Swiper({
-  
-});
 
 
 
- 
+
+
