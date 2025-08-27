@@ -18,6 +18,12 @@ body{
   margin: 0 auto;
 }
 
+.container-2{
+  max-width: 1460px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
 .title{
   font-family: 'Lato-Black';
   font-size: 40px;
@@ -346,7 +352,6 @@ body{
     margin-bottom: 4px;
   }
   &__discount-btn{
-    font-family: 'Lato-Bold';
     border: none;
     padding: 20px 57px;
     background-color: #12c10c;
@@ -357,16 +362,22 @@ body{
     cursor: pointer;
     transition: all .3s;
   }
-    &__discount-btn:hover{
-      box-shadow: 0 0 12px #12c10c;
-    }
- 
+  &__discount-btn:hover{
+    box-shadow: 0 0 12px #12c10c;
+  }
+  &__discount-program{
+    font-family: 'Lato-Bold';
+
+  }
   &__discount-text-2{
     text-transform: uppercase;
     color: #12c10c;
   }
   &__discount-text-3{
     text-transform: uppercase;
+  }
+  &__discount-img{
+    width: 208px;
   }
   &__correction{
     font-family: 'Lato-Medium';
@@ -380,7 +391,6 @@ body{
     z-index: -1;
     margin-left: 600px;
     margin-top:120px;
-    object-fit: contain;
   }
 }
 
@@ -457,7 +467,7 @@ body{
 
 
 .program{
-  padding: 70px 0;
+  padding: 70px 0 80px;
   background-color: #dedede;
   text-align: center;
   font-family: 'Lato-Bold',sans-serif;
@@ -528,7 +538,7 @@ body{
 } 
 
 .ration{
-  padding: 80px 0;
+  padding: 85px 0;
   &__inner{
     text-align: center;
     margin-bottom: 120px;
@@ -547,9 +557,9 @@ body{
         top: 50%;
         transform: translateY(-50%);
         display: block;
-        border-top: 10px solid #fff;
-        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;
+        border-top: 6px solid #fff;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
         width: 0;
         height: 0;
         pointer-events: none;
@@ -563,7 +573,7 @@ body{
     font-family: 'Lato-Bold';
     font-size: 16px;
     border-radius: 40px;
-    padding: 10px 35px 10px 15px;
+    padding: 10px 40px 10px 20px;
     outline: none;
     appearance: none;
     transition: all .3s;   
@@ -574,7 +584,7 @@ body{
   
   &__text{
     margin-top: 30px;
-    font-size: 16px;
+    font-size: 15px;
   }
   &__bottom{
     text-align: center;
@@ -583,7 +593,7 @@ body{
     font-family: 'Lato-Medium';
     font-size: 20px;
     color: #000;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
   }
   &__discount{
     border: none;
@@ -592,15 +602,18 @@ body{
     text-decoration: underline;
     color: #12c10c;
     cursor: pointer;
+    &:hover{
+      text-decoration: none;
+    }
   }
   &__btn{
     border: none;
     background-color: #12c10c;
     color: #fff;
     font-family: 'Lato-Bold';
-    font-size: 28px;
-    padding: 25px;
-    border-radius: 30px;
+    font-size: 26px;
+    padding: 22px 20px;
+    border-radius: 40px;
     margin-bottom: 20px;
     cursor: pointer;
     transition: all .3s;
@@ -618,17 +631,21 @@ body{
     color: #12c10c;
     text-decoration: underline;
     cursor: pointer;
+    &:hover{
+      text-decoration: none;
+    }
   }
   
 }
 
 .ration-slider{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 40px;
   margin-bottom: 60px;
   &__item{
-    width: 250px;
-    min-height: 460px;
+    width: 260px;
+    min-height: 450px;
     padding: 20px;
     box-shadow: 0 0 30px #d7d4d4;
     border-radius: 20px;
@@ -647,7 +664,7 @@ body{
   }
   &__name{
     font-family: 'Lato-Bold';
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 12px;
   }
   &__text{
@@ -656,7 +673,7 @@ body{
   &__calories{
     margin-top: auto;
     color: #12c10c;
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -665,13 +682,14 @@ body{
     display: flex;
   }
   &__top-content{
-    max-width: 570px;
-    margin-left: 200px;
-    padding-top: 20px;
+    max-width: 560px;
+    margin-left: 315px;
+    padding-top: 25px;
     margin-bottom: 120px;
   }
   &__top-title{
     margin-bottom: 50px;
+    line-height: 1;
   }
   &__top-text{
     max-width: 535px;
@@ -696,30 +714,31 @@ body{
     font-size: 26px;
     line-height: 100%;
     cursor: pointer;
+    transition: .4s;
+    &:hover{
+      box-shadow: 0 0 12px #f03538;
+    }
   }
   &__top-img-box{
     position: relative;
-    width: 426px;
     &::before{
       content: "";
       position: absolute;
       width: 72px;
       height: 70px;
-      left: -88px;
-      bottom: 80px;
+      left: -83px;
+      bottom: 93px;
       background-image: url('../images/medical-perec.png');
     }
   }
   &__top-img{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 426px;
-    height: 506px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
   }
   &__table{
     padding: 40px;
-    max-width: 1081px;
+    max-width: 1080px;
     margin: 0 auto;
     background-color: #e4e4e4;
     border-radius: 47px;
@@ -790,6 +809,10 @@ body{
     border-radius: 39px;
     cursor: pointer;
     font-size: 20px;
+    transition: .4s;
+    &:hover{
+      box-shadow: 0 0 12px #12c10c;
+    }
   }
   &__btn-day--active{
     background-color: #ababab;
@@ -867,6 +890,10 @@ body{
     text-transform: uppercase;
     font-family: 'Lato-SemiBold';
     cursor: pointer;
+    transition: .4s;
+    &:hover{
+      text-decoration: underline;
+    }
   }
   &__bottom-info{
     font-family: 'Lato-Bold';
@@ -899,6 +926,10 @@ body{
     background-color: #F03538;
     border-radius: 50px;
     cursor: pointer;
+    transition: .4s;
+    &:hover{
+      box-shadow: 0 0 12px #f03538;
+    }
   }
 }
 .medical-top{
@@ -910,7 +941,7 @@ body{
     height: 217px;
     background-image: url('../images/medical-decor.svg');
     background-repeat: no-repeat;
-    background-position-x: -316px;
+    background-position-x: -345px;
     z-index: -1;
   }
  
@@ -1015,6 +1046,9 @@ body{
     background-color: #12c10c;
     color: #fff;
   }
+    &__btn--active:hover{
+      color: #fff;
+    }
   &__accordion{
     padding: 0 140px;
   }
@@ -1092,6 +1126,12 @@ body{
   }
   &__social-block .icon-path{
     fill:#12c10c;
+  }
+  &__social-block .social-icon__link:hover{
+    .icon-path{
+      fill: #ccc;
+      box-shadow: 0 0 12px #ccc;
+    }
   }
   &__copy{
     display: flex;
