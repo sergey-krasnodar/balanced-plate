@@ -678,6 +678,18 @@ body{
 }
 
 .medical{
+  position: relative;
+  &::after{
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    top: 0;
+    left: 0;
+    background-image: url('../images/medical-blur.png');
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
   &__top {
     display: flex;
   }
@@ -1143,6 +1155,169 @@ body{
     color: #626262;
     width: 210px;
     line-height: 1.1;
+  }
+}
+
+.modal-program{
+  padding: 0;
+  border: none;
+  display: block;
+  transform: scale(.2);
+  border-radius: 20px;
+  opacity: 0;
+  transition: all .4s linear;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  &__wrapper{
+    width: 800px;
+    background-color: #fff;
+  }
+  &::backdrop {
+    background-color: #000;
+    opacity: 0.5;
+  }
+  &[open] {
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+  }
+  &__inner{
+    padding: 20px;
+    display: flex;
+    border-bottom: 1px solid #e4e4e4;
+    justify-content: space-between;
+    box-shadow: 0 12px 10px #e4e4e4;
+    align-items: center;
+  }
+  &__box-text{
+    padding: 20px;
+    font-family: 'Lato-Black';
+    text-transform: uppercase;
+  }
+  &__img-title{
+    margin-bottom: 9px;
+  }
+  &__title{
+    font-size: 15px;
+    line-height: 100%;
+    margin-bottom: 3px;
+    color: #000;
+    max-width: 81px;
+  }
+  &__kalory{
+    font-size: 13px;
+    color: #9d9d9d;
+  }
+  &__box-img{
+    width: 207px;
+  }
+  &__img{
+    object-fit: contain;
+  }
+  &__box-bgu{
+    padding: 14px 10px 14px 20px;
+    width: 240px;
+  }
+  &__box-bgu-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 14px;
+    border-radius: 27px;
+    margin-bottom: 6px;
+    color: #000;
+    line-height: 100%;
+  }
+  &__box-bgu-item-1{
+    background-color: skyblue;
+  }
+  &__box-bgu-item-2{
+    background-color: orange;
+  }
+  &__box-bgu-item-3{
+    background-color: #12c10c;
+  }
+  &__box-bgu-name{
+    font-size: 15px;
+  }
+  &__box-bgu-procent{
+    font-family: 'Lato-Black';
+    font-size: 16px;
+  }
+  &__bottom{
+    padding: 40px;
+  }
+  &__text{
+    font-size: 16px;
+    line-height: 115%;
+    margin-bottom: 80px;
+  }
+  &__info{
+    font-family: 'Lato-Bold';
+    font-size: 17px;
+    line-height: 121%;
+    margin-bottom: 50px;
+  }
+  &__rate{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 121%;
+    color: #000;
+  }
+  &__rate-block{
+    border-radius: 19px;
+    background-color: #ebebeb;
+    width: 176px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__rate-block-x2{
+    width: 310px;
+    border-radius: 19px;
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 19px;
+  }
+  &__rate-block-price{
+    font-family: 'Lato-Bold';
+    font-size: 20px;
+  }
+  &__buttons{
+    font-family: 'Lato-Bold';
+    font-size: 17px;
+    line-height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__btn{
+    width: 220px;
+    padding: 12px 27px;
+    color: #12c10c;
+    border: 1px solid #afbebf;
+    border-radius: 20px;
+    background-color: #fff;
+    transition: .4s;
+    cursor: pointer;
+    &:hover{
+      color: #fff;
+      background-color: #12c10c;
+      box-shadow: 0 0 12px #12c10c;
+    }
+  }
+  &__btn-1{
+    color: #fff;
+    background-color: #12c10c;
+    font-size: 20px;
   }
 }
 

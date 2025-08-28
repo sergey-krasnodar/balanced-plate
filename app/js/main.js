@@ -17,10 +17,39 @@ btnDiscountOpen.forEach(function (item) {
     modalDiscount.showModal()
   })
   modalDiscount.addEventListener('click', (e) => {
-    console.log(e);
     if (e.target === modalDiscount) modalDiscount.close()
   })
 })
+
+const programItem = document.querySelectorAll('.program__item');
+const modalProgram = document.querySelector('.modal-program');
+let imgFiles = document.querySelectorAll('.modal-program__img-title');
+
+programItem.forEach((item) => {
+  item.addEventListener('click', () => {
+    let idItem = item.getAttribute("id");
+    imgFiles.forEach((it) => {
+      imgFile = it.getAttribute('src');
+    })
+    imgFile = `images/modal/${idItem}.svg`
+    document.querySelector('.modal-program__img-title').setAttribute('src', `../${imgFile}`);
+
+    console.log();
+    console.log(idItem);
+    
+    modalProgram.showModal();
+
+  })
+
+
+
+
+   modalProgram.addEventListener('click', (e) => {
+    if (e.target === modalProgram) modalProgram.close()
+  })
+})
+
+
 
 
 
