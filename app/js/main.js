@@ -23,31 +23,75 @@ btnDiscountOpen.forEach(function (item) {
 
 const programItem = document.querySelectorAll('.program__item');
 const modalProgram = document.querySelector('.modal-program');
-let imgFiles = document.querySelectorAll('.modal-program__img-title');
+const imgFiles = document.querySelectorAll('.modal-program__img-title');
+const programTitle = document.querySelector('.modal-program__title');
+const programKalory = document.querySelector('.modal-program__kalory');
+const programText = document.querySelector('.modal-program__text');
+const ration = document.querySelector('.ration');
+const programButton = document.querySelectorAll('.modal-program__btn');
+const programRate = document.getElementById('programRate');
+
 
 programItem.forEach((item) => {
   item.addEventListener('click', () => {
     let idItem = item.getAttribute("id");
-    imgFiles.forEach((it) => {
-      imgFile = it.getAttribute('src');
-    })
-    imgFile = `images/modal/${idItem}.svg`
-    document.querySelector('.modal-program__img-title').setAttribute('src', `../${imgFile}`);
-
-    console.log();
-    console.log(idItem);
+    if (idItem === 'life'){
+      programTitle.textContent = 'Не хочу готовить';
+      programKalory.textContent = '1500 ккл';
+      programText.textContent = 'LIFE-программа калорийностью 1400-1500 в день сделана специально для активных и жизнерадостных пользователей!';
+      programRate.textContent = '6 Приемов пищи';
+    }
+    if (idItem === 'sport'){
+      programTitle.textContent = 'Для спортсменов';
+      programKalory.textContent = '1800 - 2000 ккл';
+      programText.textContent = 'SPORT-программа 1900-2000 калорий позволит вам всегда оставаться в хорошей форме!';
+      programRate.textContent = '7 Приемов пищи';
+    }
+    if (idItem === 'vegetarian'){
+      programTitle.textContent = 'Исключаем мясо';
+      programKalory.textContent = '1200 - 1500 ккл';
+      programText.textContent = 'VEGETARIAN-программа, рассчитана на 1200-1300 калорий, позволяет питаться легко и без мяса!';
+      programRate.textContent = '6 Приемов пищи';
+    }
+    if (idItem === 'fit'){
+      programTitle.textContent = 'Хочу похудеть';
+      programKalory.textContent = '1800 - 2000 ккл';
+      programText.textContent = 'FIT - программа, рассчитаная на 1200-1300 калорий, с повышенным содержанием белка, позволит вам быстро, вкусно и безопасно достичь результата!';
+      programRate.textContent = '5 Приемов пищи';
+    }
+    if (idItem === 'health'){
+      programTitle.textContent = 'Нужна особая диета';
+      programKalory.textContent = '';
+      programText.textContent = 'HEATH-программа, разделенная на 15 диет, подбирается индивидуально в зависимости от болезни';
+      programRate.textContent = '6 Приемов пищи';
+    }
+    if (idItem === 'detox'){
+      programTitle.textContent = 'Чистим организм';
+      programKalory.textContent = '';
+      programText.innerHTML = `DETOX - рацион программы рассчитан на 1500 ккал в соотношении белков, жиров, углеводов.
+      
+      Те, кто предпочитает здоровый образ жизни, могут придерживаться этой диеты, которая позволит им есть вкусную и разнообразную пищу, не набирая вес.`;
+      programRate.textContent = '3 Приема пищи';
+    }
     
+    document.querySelector('.modal-program__img-title').setAttribute('src', `images/modal/${idItem}.svg`);
+    document.querySelector('.modal-program__img').setAttribute('src',`images/program/${idItem}.svg`);
     modalProgram.showModal();
-
-  })
-
-
-
-
-   modalProgram.addEventListener('click', (e) => {
-    if (e.target === modalProgram) modalProgram.close()
   })
 })
+
+modalProgram.addEventListener('click', (e) => {
+  if  (e.target === modalProgram) modalProgram.close();
+    programButton.forEach(item => {
+    item.addEventListener('click',()=>{
+      modalProgram.close();
+      if (item.getAttribute('id')==='ration'){
+        ration.scrollIntoView();
+      }
+    })
+  });
+})
+
 
 
 
