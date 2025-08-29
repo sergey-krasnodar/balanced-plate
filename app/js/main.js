@@ -92,6 +92,27 @@ modalProgram.addEventListener('click', (e) => {
   });
 })
 
+let btnQuest = document.querySelectorAll('[data-btn-questions]');
+let questionsAccordion = document.querySelectorAll('.questions__accordion');
+
+
+btnQuest.forEach((item) =>{
+  item.addEventListener('click', () => {
+    document.querySelector('.questions__btn--active').classList.remove('questions__btn--active');
+    item.classList.add('questions__btn--active');
+    questionsAccordion.forEach((elem) => {
+      elem.classList.add('hidden');
+    })
+    let btnAttr = item.dataset.btnQuestions;
+    let openWin = document.querySelector(`#${btnAttr}`);
+    openWin.classList.remove('hidden');
+  })
+})
+console.log();
+  
+
+
+
 
 
 
