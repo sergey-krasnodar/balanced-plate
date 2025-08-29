@@ -1,3 +1,12 @@
+const swiper = new Swiper(".swiper", {
+  loop: true,
+  slidesPerView: 3,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
 const btnPhoneOpen = document.querySelector('.header__btn-phone');
 const modalPhone = document.getElementById('modal');
@@ -109,13 +118,7 @@ btnQuest.forEach((item) =>{
   })
 })
 
-const mySwiper = new Swiper('.swiper', {
-  slidesPerView: 3,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
+
 
 
 
