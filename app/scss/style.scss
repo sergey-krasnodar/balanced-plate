@@ -545,6 +545,7 @@ body{
 
 .ration{
   padding: 85px 0;
+  position: relative;
   &__inner{
     text-align: center;
     margin-bottom: 120px;
@@ -641,19 +642,51 @@ body{
       text-decoration: none;
     }
   }
-  
+.ration-slider__btn-prev,
+.ration-slider__btn-next{
+  position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/arrow.svg');
+    background-repeat: no-repeat;
+  }
+.ration-slider__btn-next{
+  left: 50px;
+
+}
+.ration-slider__btn-prev{
+  right: 50px;
+  transform: rotate(180deg);
+}
 }
 
 .ration-slider{
-  display: flex;
-  justify-content: center;
-  gap: 40px;
+  margin: 0 auto;
+  width: 1180px;
+  overflow: hidden;
   margin-bottom: 60px;
+  &__inner{
+    padding: 0 10px;  
+    height: 500px;
+    width: 1800px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+    left: 0;
+    transition: .5s;
+  }
   &__item{
     width: 260px;
-    min-height: 450px;
+    min-height: 470px;
     padding: 20px;
-    box-shadow: 0 0 30px #d7d4d4;
+    box-shadow: 0 0 12px #d7d4d4;
     border-radius: 20px;
     display: flex;
     flex-direction: column;

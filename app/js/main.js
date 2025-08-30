@@ -118,7 +118,28 @@ btnQuest.forEach((item) =>{
   })
 })
 
+const slider = document.querySelector('.ration-slider__inner');
+const prevBtn = document.querySelector('.ration-slider__btn-prev');
+const nextBtn = document.querySelector('.ration-slider__btn-next');
+let currentPosition = 0;
+const step = 600;
 
+function moveSlider(direction) {
+  if (direction === 'ration-slider__btn-prev') {
+    currentPosition += step;
+  } else {
+    currentPosition -= step;
+  }
+  slider.style.left = currentPosition + 'px';
+}
+
+prevBtn.addEventListener('click', function () {
+  moveSlider('ration-slider__btn-prev');
+});
+
+nextBtn.addEventListener('click', function () {
+  moveSlider('ration-slider__btn-next');
+});
 
 
 
