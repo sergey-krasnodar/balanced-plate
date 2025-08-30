@@ -128,31 +128,6 @@ btnQuest.forEach((item) =>{
   })
 })
 
-// const slider = document.querySelector('.ration-slider__inner');
-// const sliderItem = document.querySelectorAll('.ration-slider__item');
-// const prevBtn = document.querySelector('.ration-slider__btn-prev');
-// const nextBtn = document.querySelector('.ration-slider__btn-next');
-// let currentPosition = 0;
-// const step = 300;
-
-// function moveSlider(direction) {
-//   if (direction === 'ration-slider__btn-prev') {
-//     currentPosition += step;
-//     console.log(currentPosition);
-//   } else {
-//     currentPosition -= step;
-//     console.log(currentPosition);
-//   }
-//   slider.style.left = currentPosition + 'px';
-// }
-
-// prevBtn.addEventListener('click', function () {
-//   moveSlider('ration-slider__btn-prev');
-// });
-
-// nextBtn.addEventListener('click', function () {
-//   moveSlider('ration-slider__btn-next');
-// });
 
 
 
