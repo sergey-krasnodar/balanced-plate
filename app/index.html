@@ -792,9 +792,9 @@
             пользователей!
           </p>
         </div>
-        <div class="ration-slider">
-          <div class="ration-slider__inner">
-            <div class="ration-slider__item">
+        <div class="ration-slider swiper1">
+          <div class="ration-slider__inner swiper-wrapper">
+            <div id="ration-slider-item" class="ration-slider__item swiper-slide">
               <h5 class="ration-slider__title">1 прием пищи</h5>
               <img class="ration-slider__img" src="images/ration/life-1.jpg" alt="Блюдо">
               <p class="ration-slider__name">
@@ -806,7 +806,7 @@
               </p>
               <p class="ration-slider__calories">387 ккал</p>
             </div>
-            <div class="ration-slider__item">
+            <div id="ration-slider-item" class="ration-slider__item swiper-slide">
               <h5 class="ration-slider__title">2 прием пищи</h5>
               <img class="ration-slider__img" src="images/ration/life-1.jpg" alt="Блюдо">
               <p class="ration-slider__name">
@@ -818,7 +818,7 @@
               </p>
               <p class="ration-slider__calories">76 ккал</p>
             </div>
-            <div class="ration-slider__item">
+            <div id="ration-slider-item" class="ration-slider__item swiper-slide">
               <h5 class="ration-slider__title">3 прием пищи</h5>
               <img class="ration-slider__img" src="images/ration/life-1.jpg" alt="Блюдо">
               <p class="ration-slider__name">
@@ -830,7 +830,7 @@
               </p>
               <p class="ration-slider__calories">241 ккал</p>
             </div>
-            <div class="ration-slider__item">
+            <div id="ration-slider-item" class="ration-slider__item swiper-slide">
               <h5 class="ration-slider__title">4 прием пищи</h5>
               <img class="ration-slider__img" src="images/ration/life-1.jpg" alt="Блюдо">
               <p class="ration-slider__name">
@@ -842,29 +842,29 @@
               </p>
               <p class="ration-slider__calories">165 ккал</p>
             </div>
-            <div class="ration-slider__item">
-              <h5 class="ration-slider__title">4 прием пищи</h5>
+            <div id="ration-slider-item" class="ration-slider__item swiper-slide">
+              <h5 class="ration-slider__title">5 прием пищи</h5>
               <img class="ration-slider__img" src="images/ration/life-1.jpg" alt="Блюдо">
               <p class="ration-slider__name">
-                Гаспачо
+                Лапша Удон с курицей Терияки
               </p>
               <p class="ration-slider__text">
-                Испанский вариант обеда!<br>
-                Состав: Помидоры, перец болгарский, масло оливковое, специи
+                Сложные углеводы и белки помогут построить ваше тело!
+                Состав: Филе куриной грудки, перец болгарский, морковь, лапша удон, соус терияки, зелень кинза, кунжут
               </p>
-              <p class="ration-slider__calories">165 ккал</p>
+              <p class="ration-slider__calories">441 ккал</p>
             </div>
-            <div class="ration-slider__item">
-              <h5 class="ration-slider__title">4 прием пищи</h5>
+            <div id="ration-slider-item" class="ration-slider__item swiper-slide">
+              <h5 class="ration-slider__title">6 прием пищи</h5>
               <img class="ration-slider__img" src="images/ration/life-1.jpg" alt="Блюдо">
               <p class="ration-slider__name">
-                Гаспачо
+                Печеные овощи с кебабом из говядины
               </p>
               <p class="ration-slider__text">
-                Испанский вариант обеда!<br>
-                Состав: Помидоры, перец болгарский, масло оливковое, специи
+                "Правильно" - не значит "Не вкусно"
+                Состав: Баклажаны, кабачки, перец болгарский, говядина, специи, масло оливковое
               </p>
-              <p class="ration-slider__calories">165 ккал</p>
+              <p class="ration-slider__calories">278 ккал</p>
             </div>
           </div>
           <div class="ration-slider__btn-prev"></div>
@@ -1463,44 +1463,83 @@
   </footer>
 
   <dialog class="modal-discount">
+
     <div class="modal-discount__wrapper">
+
       <img class="modal-discount__img" src="images/discount.svg" alt="20%">
+
       <h3 class="modal-discount__title">
+
         ПРОГРАМА ЗНАКОМСТВО
+
       </h3>
+
       <p class="modal-discount__text">
+
         Для новых клиентов мы прелагаем
+
         знакомство с сервисом со скидкой.
+
         Что бы получить скидку просто заполните форму ниже.
+
       </p>
+
       <form class="modal-discount__form">
+
         <label class="modal-discount__label" for="tel">
+
           Номер телефона*
+
         </label>
+
         <input class="modal-discount__input" type="text" placeholder="+7">
+
         <label class="modal-discount__label" for="name">
+
           Ваше имя*
+
         </label>
+
         <input class="modal-discount__input" type="text" placeholder="Ваше имя">
+
         <label class="modal-discount__label" for="text">
+
           Прогрма питания
+
         </label>
+
         <div class="modal-discount__inner">
+
           <select class="modal-discount__select">
+
             <option class="modal-discount__option" value="life">LIFE</option>
+
             <option class="modal-discount__option" value="sport">SPORT</option>
+
             <option class="modal-discount__option" value="vegetarian">VEGETARIAN</option>
+
             <option class="modal-discount__option" value="fit">FIT</option>
+
             <option class="modal-discount__option" value="health">HEALTH</option>
+
             <option class="modal-discount__option" value="detox">DETOX</option>
+
             <option class="modal-discount__option" value="medical">Медицинское питание</option>
+
           </select>
+
         </div>
+
         <button class="modal-discount__btn">
+
           Получить скидку 20%
+
         </button>
+
       </form>
+
     </div>
+
   </dialog>
   <dialog class="modal-program">
     <div class="modal-program__wrapper">

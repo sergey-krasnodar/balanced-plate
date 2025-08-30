@@ -656,13 +656,14 @@ body{
     background-image: url('../images/arrow.svg');
     background-repeat: no-repeat;
   }
-.ration-slider__btn-next{
-  left: 50px;
-
-}
-.ration-slider__btn-prev{
-  right: 50px;
-  transform: rotate(180deg);
+  .ration-slider__btn-next{
+    left: 50px;
+    
+  }
+  .ration-slider__btn-prev{
+    right: 50px;
+    transform-origin: 50% 25%;
+    transform: rotate(180deg);
 }
 }
 
@@ -673,21 +674,17 @@ body{
   margin-bottom: 60px;
   &__inner{
     padding: 0 10px;  
-    height: 500px;
-    width: 1800px;
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    position: relative;
+    height: 470px;
     left: 0;
     transition: .5s;
+    align-items: center;
   }
   &__item{
-    width: 260px;
-    min-height: 470px;
-    padding: 20px;
+    width: 220px !important;
+    height: 410px !important;
+    padding: 20px !important;
     box-shadow: 0 0 12px #d7d4d4;
-    border-radius: 20px;
+    border-radius: 20px !important;
     display: flex;
     flex-direction: column;
   }
@@ -708,6 +705,7 @@ body{
   }
   &__text{
     font-size: 16px;
+    line-height: 1;
   }
   &__calories{
     margin-top: auto;
@@ -715,6 +713,7 @@ body{
     font-size: 14px;
   }
 }
+
 
 .medical{
   position: relative;

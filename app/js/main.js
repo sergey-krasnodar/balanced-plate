@@ -8,6 +8,16 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
+const swiper1 = new Swiper(".swiper1", {
+  loop: true,
+  slidesPerView: 4,
+  spaceBetween: 40,
+  navigation: {
+    nextEl: ".ration-slider__btn-next",
+    prevEl: ".ration-slider__btn-prev",
+  },
+});
+
 const btnPhoneOpen = document.querySelector('.header__btn-phone');
 const modalPhone = document.getElementById('modal');
 
@@ -118,33 +128,36 @@ btnQuest.forEach((item) =>{
   })
 })
 
-const slider = document.querySelector('.ration-slider__inner');
-const prevBtn = document.querySelector('.ration-slider__btn-prev');
-const nextBtn = document.querySelector('.ration-slider__btn-next');
-let currentPosition = 0;
-const step = 600;
+// const slider = document.querySelector('.ration-slider__inner');
+// const sliderItem = document.querySelectorAll('.ration-slider__item');
+// const prevBtn = document.querySelector('.ration-slider__btn-prev');
+// const nextBtn = document.querySelector('.ration-slider__btn-next');
+// let currentPosition = 0;
+// const step = 300;
 
-function moveSlider(direction) {
-  if (direction === 'ration-slider__btn-prev') {
-    currentPosition += step;
-  } else {
-    currentPosition -= step;
-  }
-  slider.style.left = currentPosition + 'px';
-}
+// function moveSlider(direction) {
+//   if (direction === 'ration-slider__btn-prev') {
+//     currentPosition += step;
+//     console.log(currentPosition);
+//   } else {
+//     currentPosition -= step;
+//     console.log(currentPosition);
+//   }
+//   slider.style.left = currentPosition + 'px';
+// }
 
-prevBtn.addEventListener('click', function () {
-  moveSlider('ration-slider__btn-prev');
-});
+// prevBtn.addEventListener('click', function () {
+//   moveSlider('ration-slider__btn-prev');
+// });
 
-nextBtn.addEventListener('click', function () {
-  moveSlider('ration-slider__btn-next');
-});
-
-
+// nextBtn.addEventListener('click', function () {
+//   moveSlider('ration-slider__btn-next');
+// });
 
 
-console.log();
+
+
+
   
 
 
