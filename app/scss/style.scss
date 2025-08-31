@@ -12,6 +12,7 @@ body{
   line-height: 115%;
   font-size: 18px;
   overflow-x: hidden;
+  position: relative;
 }
 
 .container {
@@ -23,6 +24,11 @@ body{
 .container-2{
   max-width: 1460px;
   padding: 0 10px;
+  margin: 0 auto;
+}
+
+.container-menu{
+  max-width: 313px;
   margin: 0 auto;
 }
 
@@ -1356,6 +1362,60 @@ body{
     color: #fff;
     background-color: #12c10c;
     font-size: 20px;
+  }
+}
+
+.modal-menu{
+  position: absolute;
+  width: 350px;
+  background-color: #fff;
+  margin-left: auto;
+  top: 0;
+  right: 0;
+  line-height: 100%;
+  color: #000;
+  opacity: 1;
+  &::after{
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/cross.svg');
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  &__inner-title{
+    padding-top: 60px;
+  }
+  &__top-title{
+    font-family: 'Lato-Bold';
+    font-size: 29px;
+    margin-bottom: 15px;
+  }
+  &__title{
+    padding: 10px 0 20px;
+    border-bottom: 1px solid #e4e4e4;
+    margin-top: 20px;
+  }
+  &__form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+  }
+  &__btn{
+    font-family: 'Lato-Bold';
+    font-size: 20px;
+    color: #fff;
+    background-color: #9b9b9b;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    padding: 20px 50px;
+    border-radius: 40px;
+    margin: 10px 0 20px;
   }
 }
 

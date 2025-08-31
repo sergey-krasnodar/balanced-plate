@@ -1462,84 +1462,152 @@
     </div>
   </footer>
 
-  <dialog class="modal-discount">
-
-    <div class="modal-discount__wrapper">
-
-      <img class="modal-discount__img" src="images/discount.svg" alt="20%">
-
-      <h3 class="modal-discount__title">
-
-        ПРОГРАМА ЗНАКОМСТВО
-
-      </h3>
-
-      <p class="modal-discount__text">
-
-        Для новых клиентов мы прелагаем
-
-        знакомство с сервисом со скидкой.
-
-        Что бы получить скидку просто заполните форму ниже.
-
-      </p>
-
-      <form class="modal-discount__form">
-
-        <label class="modal-discount__label" for="tel">
-
-          Номер телефона*
-
-        </label>
-
-        <input class="modal-discount__input" type="text" placeholder="+7">
-
-        <label class="modal-discount__label" for="name">
-
-          Ваше имя*
-
-        </label>
-
-        <input class="modal-discount__input" type="text" placeholder="Ваше имя">
-
-        <label class="modal-discount__label" for="text">
-
-          Прогрма питания
-
-        </label>
-
-        <div class="modal-discount__inner">
-
-          <select class="modal-discount__select">
-
-            <option class="modal-discount__option" value="life">LIFE</option>
-
-            <option class="modal-discount__option" value="sport">SPORT</option>
-
-            <option class="modal-discount__option" value="vegetarian">VEGETARIAN</option>
-
-            <option class="modal-discount__option" value="fit">FIT</option>
-
-            <option class="modal-discount__option" value="health">HEALTH</option>
-
-            <option class="modal-discount__option" value="detox">DETOX</option>
-
-            <option class="modal-discount__option" value="medical">Медицинское питание</option>
-
-          </select>
-
+  <div class="modal-menu">
+    <div class="container-menu">
+      <div class="modal-menu__inner-title">
+        <h2 class="modal-menu__top-title">Настройки меню</h2>
+        <p class="modal-menu__subtitle">
+          Выберите нежелательные ингредиенты, и мы исключим блюда с ними из меню
+        </p>
+      </div>
+      <div class="modal-menu__choice">
+        <h3 class="modal-menu__title">Выберите предпочтения</h3>
+        <div class="modal-menu__form">
+          <div class="modal-menu__label">Больше белка</div>
+          <input class="modal-menu__input" type="checkbox">
         </div>
-
-        <button class="modal-discount__btn">
-
-          Получить скидку 20%
-
-        </button>
-
-      </form>
-
+        <div class="modal-menu__form">
+          <div class="modal-menu__label">Меньше сладкого (больше сытного)</div>
+          <input class="modal-menu__input" type="checkbox">
+        </div>
+        <div class="modal-menu__form">
+          <div class="modal-menu__label">Меньше молочного</div>
+          <input class="modal-menu__input" type="checkbox">
+        </div>
+        <div class="modal-menu__form">
+          <div class="modal-menu__label">Меньше специй</div>
+          <input class="modal-menu__input" type="checkbox">
+        </div>
+      </div>
+      <div class="modal-menu__allergens">
+        <h3 class="modal-menu__title">Исключите аллергены</h3>
+        <div class="modal-menu__form">
+          <div class="modal-menu__label">Грецкий орех</div>
+          <input class="modal-menu__input" type="checkbox">
+        </div>
+        <div class="modal-menu__form">
+          <div class="modal-menu__label">Арахис</div>
+          <input class="modal-menu__input" type="checkbox">
+        </div>
+        <div class="modal-menu__form">
+          <div class="modal-menu__label">Орех мускатный</div>
+          <input class="modal-menu__input" type="checkbox">
+        </div>
+        <div class="modal-menu__form">
+          <div class="modal-menu__label">Мёд</div>
+          <input class="modal-menu__input" type="checkbox">
+        </div>
+        <div class="modal-menu__form">
+          <div class="modal-menu__label">Горчица зернистая</div>
+          <input class="modal-menu__input" type="checkbox">
+        </div>
+        <div class="modal-menu__form">
+          <div class="modal-menu__label">Шоколад</div>
+          <input class="modal-menu__input" type="checkbox">
+        </div>
+        <div class="modal-menu__form">
+          <div class="modal-menu__label">Творог натуральный</div>
+          <input class="modal-menu__input" type="checkbox">
+        </div>
+        <div class="modal-menu__form">
+          <div class="modal-menu__label">Творожные продукты</div>
+          <input class="modal-menu__input" type="checkbox">
+        </div>
+        <div class="modal-menu__form">
+          <div class="modal-menu__label">Лук в приправах (менее 2 гр)</div>
+          <input class="modal-menu__input" type="checkbox">
+        </div>
+      </div>
+      <div class="modal-menu__vegetables">
+        <h3 class="modal-menu__title">Исключите овощи</h3>
+        <div class="modal-menu__form">
+          <div class="modal-menu__label">Сельдерей</div>
+          <input class="modal-menu__input" type="checkbox">
+        </div>
+        <div class="modal-menu__form">
+          <div class="modal-menu__label">Грибы</div>
+          <input class="modal-menu__input" type="checkbox">
+        </div>
+        <div class="modal-menu__form">
+          <div class="modal-menu__label">Болгарский перец</div>
+          <input class="modal-menu__input" type="checkbox">
+        </div>
+        <div class="modal-menu__form">
+          <div class="modal-menu__label">Брокколи</div>
+          <input class="modal-menu__input" type="checkbox">
+        </div>
+        <div class="modal-menu__form">
+          <div class="modal-menu__label">Кабачки</div>
+          <input class="modal-menu__input" type="checkbox">
+        </div>
+        <div class="modal-menu__form">
+          <div class="modal-menu__label">Картофель</div>
+          <input class="modal-menu__input" type="checkbox">
+        </div>
+        <div class="modal-menu__form">
+          <div class="modal-menu__label">Консервированная кукуруза</div>
+          <input class="modal-menu__input" type="checkbox">
+        </div>
+      </div>
+      <div class="modal-menu__sugar">
+        <h3 class="modal-menu__title">Исключите сахар</h3>
+        <div class="modal-menu__form">
+          <div class="modal-menu__label">Сахар</div>
+          <input class="modal-menu__input" type="checkbox">
+        </div>
+      </div>
+      <button class="modal-menu__btn">Применить настройки</button>
     </div>
-
+  </div>
+  <dialog class="modal-discount">
+    <div class="modal-discount__wrapper">
+      <img class="modal-discount__img" src="images/discount.svg" alt="20%">
+      <h3 class="modal-discount__title">
+        ПРОГРАМА ЗНАКОМСТВО
+      </h3>
+      <p class="modal-discount__text">
+        Для новых клиентов мы прелагаем
+        знакомство с сервисом со скидкой.
+        Что бы получить скидку просто заполните форму ниже.
+      </p>
+      <form class="modal-discount__form">
+        <label class="modal-discount__label" for="tel">
+          Номер телефона*
+        </label>
+        <input class="modal-discount__input" type="text" placeholder="+7">
+        <label class="modal-discount__label" for="name">
+          Ваше имя*
+        </label>
+        <input class="modal-discount__input" type="text" placeholder="Ваше имя">
+        <label class="modal-discount__label" for="text">
+          Прогрма питания
+        </label>
+        <div class="modal-discount__inner">
+          <select class="modal-discount__select">
+            <option class="modal-discount__option" value="life">LIFE</option>
+            <option class="modal-discount__option" value="sport">SPORT</option>
+            <option class="modal-discount__option" value="vegetarian">VEGETARIAN</option>
+            <option class="modal-discount__option" value="fit">FIT</option>
+            <option class="modal-discount__option" value="health">HEALTH</option>
+            <option class="modal-discount__option" value="detox">DETOX</option>
+            <option class="modal-discount__option" value="medical">Медицинское питание</option>
+          </select>
+        </div>
+        <button class="modal-discount__btn">
+          Получить скидку 20%
+        </button>
+      </form>
+    </div>
   </dialog>
   <dialog class="modal-program">
     <div class="modal-program__wrapper">
