@@ -1367,44 +1367,70 @@ body{
 
 .modal-menu{
   position: absolute;
-  width: 350px;
+  width: 330px;
   background-color: #fff;
   margin-left: auto;
+  padding: 0 20px;
   top: 0;
-  right: 0;
+  right: -100%;
   line-height: 100%;
   color: #000;
-  opacity: 1;
-  &::after{
-    content: "";
+  transition: all .5s;
+  &__close{
     position: absolute;
+    background-image: url('../images/cross.svg');
+    background-repeat: no-repeat;
     top: 20px;
     right: 20px;
     width: 20px;
     height: 20px;
-    background-image: url('../images/cross.svg');
-    background-repeat: no-repeat;
+    border: none;
+    background-color: transparent;
     cursor: pointer;
   }
   &__inner-title{
-    padding-top: 60px;
+    padding-top: 50px;
   }
   &__top-title{
     font-family: 'Lato-Bold';
     font-size: 29px;
     margin-bottom: 15px;
   }
+  &__subtitle{
+    font-size: 16px;
+    line-height: 1;
+  }
   &__title{
     padding: 10px 0 20px;
     border-bottom: 1px solid #e4e4e4;
-    margin-top: 20px;
+    margin-top: 25px;
+    font-size: 20px;
   }
   &__form{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 0;
+    padding: 10px 0;
   }
+  &__label{
+    font-size: 16px;
+  }
+  &__input{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #a9a9a9;
+    border-radius: 5px;
+    cursor: pointer;
+    &:checked{
+      background-image: url('../images/checked.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 20px;
+      height: 20px;
+      border: 3px solid #12c10c;
+    }
+  } 
   &__btn{
     font-family: 'Lato-Bold';
     font-size: 20px;
@@ -1413,11 +1439,16 @@ body{
     border: none;
     display: block;
     margin: 0 auto;
-    padding: 20px 50px;
+    padding: 20px 40px;
     border-radius: 40px;
     margin: 10px 0 20px;
   }
 }
+.modal-menu.active{
+  right: 0;
+  transition: all .5s;
+}
+
 
 
 

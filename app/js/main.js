@@ -33,10 +33,12 @@ const modalDiscount = document.querySelector('.modal-discount');
 
 btnDiscountOpen.forEach(function (item) {
   item.addEventListener('click', () => {
-    modalDiscount.showModal()
+    modalDiscount.showModal();
+    document.body.style.overflow = "hidden";
   })
   modalDiscount.addEventListener('click', (e) => {
     if (e.target === modalDiscount) modalDiscount.close()
+      document.body.style.overflow = "";
   })
 })
 
@@ -100,7 +102,7 @@ programItem.forEach((item) => {
 })
 
 modalProgram.addEventListener('click', (e) => {
-  if  (e.target === modalProgram) modalProgram.close();
+  if  (e.target === modalProgram) modalProgram.close();})
     programButton.forEach(item => {
     item.addEventListener('click',()=>{
       modalProgram.close();
@@ -109,7 +111,7 @@ modalProgram.addEventListener('click', (e) => {
       }
     })
   });
-})
+
 
 let btnQuest = document.querySelectorAll('[data-btn-questions]');
 let questionsAccordion = document.querySelectorAll('.questions__accordion');
@@ -127,6 +129,21 @@ btnQuest.forEach((item) =>{
     openWin.classList.remove('hidden');
   })
 })
+
+const modalMenu = document.querySelector('.modal-menu');
+const btnModalMenu = document.querySelector('.modal-program__btn-menu');
+const btnModalMenuClose = document.querySelector('.modal-menu__close');
+
+btnModalMenu.addEventListener('click', ()=>{
+  modalMenu.classList.add('active');
+  document.body.style.overflow = 'hidden';
+  window.scrollTo({top: 0});
+})
+btnModalMenuClose.addEventListener('click', () => {
+  modalMenu.classList.remove('active');
+  document.body.style.overflow = '';
+  })
+
 
 
 
