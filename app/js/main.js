@@ -1,35 +1,5 @@
 
 
-const reviewsSwiper = new Swiper(".reviews__swiper", {
-  loop: true,
-  slidesPerView: 3,
-  spaceBetween: 30,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-
-const swiperRation = new Swiper(".ration-slider", {
-  loop: true,
-  slidesPerView: 3,
-  spaceBetween: 40,
-  navigation: {
-    nextEl: ".ration-slider__btn-next",
-    prevEl: ".ration-slider__btn-prev",
-  },
-});
-
-const swiperMedical = new Swiper(".medical__slider", {
-  loop: true,
-  slidesPerView: 2,
-  spaceBetween: 20,
-  navigation: {
-    nextEl: ".medical__slider-btn-next",
-    prevEl: ".medical__slider-btn-prev",
-  },
-});
-
 const btnPhoneOpen = document.querySelector('.header__btn-phone');
 const modalPhone = document.getElementById('modal');
 
@@ -169,7 +139,47 @@ modalMenuContainer.addEventListener('click',(e)=>{
   e.stopPropagation();
 })
 
+const swiperRation = new Swiper(".ration-slider", {
+  loop: true,
+  slidesPerView: 3,
+  spaceBetween: 40,
+  navigation: {
+    nextEl: ".ration-slider__btn-next",
+    prevEl: ".ration-slider__btn-prev",
+  },
+});
 
+const swiperMedical = new Swiper(".medical__slider", {
+  loop: true,
+  slidesPerView: 4,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: ".medical__slider-btn-next",
+    prevEl: ".medical__slider-btn-prev",
+  },
+ 
+});
+
+const reviewsSwiper = new Swiper(".reviews__swiper", {
+  slidesPerView: 2,
+  centeredSlides: true,
+  spaceBetween: 40,
+  navigation: {
+    nextEl: ".swiper-button-prev",
+    prevEl: ".swiper-button-next",
+  },
+   breakpoints: {
+        640: {
+          slidesPerView: 1,
+        },
+        1000: {
+          slidesPerView: 2,
+        },
+        1300: {
+          slidesPerView: 2,
+        },
+      }
+});
 
 
 

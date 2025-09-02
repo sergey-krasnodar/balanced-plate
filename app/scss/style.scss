@@ -12,6 +12,7 @@ body{
   position: relative;
 }
 
+
 .container {
   max-width: 1260px;
   padding: 0 10px;
@@ -877,20 +878,17 @@ body{
     overflow: hidden;
   }
   &__slider-wrapper{
-    width: 950px;
-    margin: 0 auto;
-    padding: 25px 10px;
     height: 230px;
-    left: 0;
+    margin: 20px 0;
   }
   &__slider-item{
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    width: 200px !important;
-    height: 180px !important;
     background-color: #fff;
-    border-radius: 20px !important;
-    padding: 20px 10px !important;
+    height: 100%;
+    border-radius: 20px;
+    padding: 20px 10px;
   }
   &__slider-item-title{
     font-family: 'Lato-Black';
@@ -1054,10 +1052,21 @@ body{
     text-align: center;
     margin-bottom: 100px;
   }
+  &__swiper{
+    overflow: hidden;
+    width: 120vw;
+  }
   &__slider{
     height: 450px;
   }
- 
+  &__item{
+    max-width: 700px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 50px;
+    height: 100%;
+  }
   &__info{
     margin-bottom: 50px;
     display: flex;
@@ -1086,15 +1095,11 @@ body{
     color: #626262;
   }
 }
-.swiper-slide{
-  height: 350px;
-  border-radius: 50px;
-  background-color: #fff;
-  padding: 50px;
-}
+
 .swiper-button-next,
 .swiper-button-prev{
   color: #aeaeae;
+  top: 55%;
 }
 
 .questions{
