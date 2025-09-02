@@ -1,9 +1,6 @@
 @use 'reset';
 @use 'fonts';
-
-
-
-
+@use '../../node_modules/swiper/swiper-bundle.css';
 
 body{
   font-family: 'Lato-Regular';
@@ -24,11 +21,6 @@ body{
 .container-2{
   max-width: 1460px;
   padding: 0 10px;
-  margin: 0 auto;
-}
-
-.container-menu{
-  max-width: 313px;
   margin: 0 auto;
 }
 
@@ -355,8 +347,10 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 710px;
-    height: 106px;
+    flex-wrap: wrap;
+    min-height: 106px;
+    gap: 15px;
+    padding: 10px;
     border-radius: 37px;
     background: linear-gradient(94.86deg, #D1F187 5.55%, #EBFFBD 106.02%);
     backdrop-filter: blur(7.5px);
@@ -370,7 +364,6 @@ body{
     border-radius: 18px;
     color: #fff;
     font-size: 26px;
-    margin-left: 20px;
     cursor: pointer;
     transition: all .3s;
   }
@@ -410,6 +403,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   &__title{
     padding-top: 150px;
     margin-bottom: 40px;
@@ -789,8 +783,8 @@ body{
   }
   &__top-img{
     object-fit: cover;
-    height: 100%;
     width: 100%;
+    height: 100%;
   }
   &__table{
     padding: 40px;
@@ -798,6 +792,9 @@ body{
     margin: 0 auto;
     background-color: #e4e4e4;
     border-radius: 47px;
+  }
+  &__inner{
+    position: relative;
   }
   &__title{
     text-align: center;
@@ -872,21 +869,28 @@ body{
   }
   &__btn-day--active{
     background-color: #ababab;
+    color: #000;
   }
   &__slider{
+    width: 950px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  &__slider-wrapper{
+    width: 950px;
+    margin: 0 auto;
     padding: 25px 10px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    height: 230px;
+    left: 0;
   }
   &__slider-item{
     display: flex;
     flex-direction: column;
-    width: 220px;
-    min-height: 230px;
+    width: 200px !important;
+    height: 180px !important;
     background-color: #fff;
-    border-radius: 20px;
-    padding: 20px 10px;
+    border-radius: 20px !important;
+    padding: 20px 10px !important;
   }
   &__slider-item-title{
     font-family: 'Lato-Black';
@@ -897,6 +901,29 @@ body{
     margin-top: auto;
     color: #b3b3b3;
   }
+     &__slider-btn-prev,
+     &__slider-btn-next {
+       position: absolute;
+       border: none;
+       padding: 0;
+       background-color: transparent;
+       width: 40px;
+       height: 40px;
+       top: 50%;
+       transform: translateY(-50%);
+       cursor: pointer;
+       &:hover svg path{
+        fill: #12c10c;
+       }
+     }
+     &__slider-btn-prev {
+       right: -20px;
+       transform: rotate(180deg);
+       transform-origin: 50% 25%;
+     }
+     &__slider-btn-next {
+       left: -20px;
+     }
   &__procent{
     display: flex;
     justify-content: space-between;
@@ -1366,16 +1393,25 @@ body{
 }
 
 .modal-menu{
-  position: absolute;
-  width: 330px;
-  background-color: #fff;
-  margin-left: auto;
-  padding: 0 20px;
-  top: 0;
-  right: -100%;
-  line-height: 100%;
-  color: #000;
-  transition: all .5s;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    &__container{position: absolute;
+      width: 330px;
+      height: 100vh;
+      margin-left: auto;
+      overflow: auto;
+      top: 0;
+      right: 330px;
+      background: #fff;
+      padding: 0 20px;
+      line-height: 100%;
+      color: #000;
+  }
   &__close{
     position: absolute;
     background-image: url('../images/cross.svg');
@@ -1439,16 +1475,21 @@ body{
     border: none;
     display: block;
     margin: 0 auto;
-    padding: 20px 40px;
+    padding: 20px 30px;
     border-radius: 40px;
     margin: 10px 0 20px;
   }
 }
 .modal-menu.active{
+  visibility: visible;
+}
+.modal-menu__container{
   right: 0;
-  transition: all .5s;
 }
 
+
+
+@import 'media';
 
 
 

@@ -1,4 +1,6 @@
-const swiper = new Swiper(".swiper", {
+
+
+const reviewsSwiper = new Swiper(".reviews__swiper", {
   loop: true,
   slidesPerView: 3,
   spaceBetween: 30,
@@ -8,13 +10,23 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-const swiper1 = new Swiper(".swiper1", {
+const swiperRation = new Swiper(".ration-slider", {
   loop: true,
-  slidesPerView: 4,
+  slidesPerView: 3,
   spaceBetween: 40,
   navigation: {
     nextEl: ".ration-slider__btn-next",
     prevEl: ".ration-slider__btn-prev",
+  },
+});
+
+const swiperMedical = new Swiper(".medical__slider", {
+  loop: true,
+  slidesPerView: 2,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: ".medical__slider-btn-next",
+    prevEl: ".medical__slider-btn-prev",
   },
 });
 
@@ -130,20 +142,32 @@ btnQuest.forEach((item) =>{
   })
 })
 
+
 const modalMenu = document.querySelector('.modal-menu');
+const modalMenuContainer = document.querySelector('.modal-menu__container');
 const btnModalMenu = document.querySelector('.modal-program__btn-menu');
 const btnModalMenuClose = document.querySelector('.modal-menu__close');
 
 btnModalMenu.addEventListener('click', ()=>{
+  modalMenuContainer.classList.add('active');
   modalMenu.classList.add('active');
   document.body.style.overflow = 'hidden';
   window.scrollTo({top: 0});
+  
 })
 btnModalMenuClose.addEventListener('click', () => {
+  modalMenuContainer.classList.remove('active');
   modalMenu.classList.remove('active');
   document.body.style.overflow = '';
-  })
-
+})
+modalMenu.addEventListener('click',()=>{
+  modalMenuContainer.classList.remove('active');
+  modalMenu.classList.remove('active');
+  document.body.style.overflow = '';
+})
+modalMenuContainer.addEventListener('click',(e)=>{
+  e.stopPropagation();
+})
 
 
 

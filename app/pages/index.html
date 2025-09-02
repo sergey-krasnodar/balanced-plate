@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Balanced Plate</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -170,7 +169,7 @@
             пользователей!
           </p>
         </div>
-        <div class="ration-slider swiper1">
+        <div class="ration-slider">
           <div class="ration-slider__inner swiper-wrapper">
             <div id="ration-slider-item" class="ration-slider__item swiper-slide">
               <h5 class="ration-slider__title">1 прием пищи</h5>
@@ -331,34 +330,56 @@
                 <button class="medical__btn-day">7й день</button>
               </div>
               <div class="medical__slider">
-                <div class="medical__slider-item">
-                  <h5 class="medical__slider-item-title">Завтрак</h5>
-                  <p class="medical__slider-item-text">
-                    Паровой омлет из перепелиных яиц
-                  </p>
-                  <p class="medical__slider-item-gram">160г</p>
+                <div class="medical__slider-wrapper swiper-wrapper">
+                  <div class="medical__slider-item swiper-slide">
+                    <h5 class="medical__slider-item-title">Завтрак</h5>
+                    <p class="medical__slider-item-text">
+                      Паровой омлет из перепелиных яиц
+                    </p>
+                    <p class="medical__slider-item-gram">160г</p>
+                  </div>
+                  <div class="medical__slider-item swiper-slide">
+                    <h5 class="medical__slider-item-title">2 завтрак</h5>
+                    <p class="medical__slider-item-text">
+                      Нежный творог 5% с медом
+                    </p>
+                    <p class="medical__slider-item-gram">120г</p>
+                  </div>
+                  <div class="medical__slider-item swiper-slide">
+                    <h5 class="medical__slider-item-title">Салат</h5>
+                    <p class="medical__slider-item-text">
+                      Свекольное пюре с сыром фета и оливковым маслом
+                    </p>
+                    <p class="medical__slider-item-gram">120г</p>
+                  </div>
+                  <div class="medical__slider-item swiper-slide">
+                    <h5 class="medical__slider-item-title">1 блюдо</h5>
+                    <p class="medical__slider-item-text">
+                      Крем-суп из цветной капусты с кокосовым молоком
+                    </p>
+                    <p class="medical__slider-item-gram">250г</p>
+                  </div>
+                  <div class="medical__slider-item swiper-slide">
+                    <h5 class="medical__slider-item-title">2 блюдо</h5>
+                    <p class="medical__slider-item-text">
+                      Суфле из кролика с картофельное пюре с брокколи
+                    </p>
+                    <p class="medical__slider-item-gram">280г</p>
+                  </div>
+                  <div class="medical__slider-item swiper-slide">
+                    <h5 class="medical__slider-item-title">Полдник</h5>
+                    <p class="medical__slider-item-text">
+                      Груша запечённая с сахарной пудрой
+                    </p>
+                    <p class="medical__slider-item-gram">130г</p>
+                  </div>
                 </div>
-                <div class="medical__slider-item">
-                  <h5 class="medical__slider-item-title">2 завтрак</h5>
-                  <p class="medical__slider-item-text">
-                    Нежный творог 5% с медом
-                  </p>
-                  <p class="medical__slider-item-gram">120г</p>
-                </div>
-                <div class="medical__slider-item">
-                  <h5 class="medical__slider-item-title">Салат</h5>
-                  <p class="medical__slider-item-text">
-                    Свекольное пюре с сыром фета и оливковым маслом
-                  </p>
-                  <p class="medical__slider-item-gram">120г</p>
-                </div>
-                <div class="medical__slider-item">
-                  <h5 class="medical__slider-item-title">1 блюдо</h5>
-                  <p class="medical__slider-item-text">
-                    Крем-суп из цветной капусты с кокосовым молоком
-                  </p>
-                  <p class="medical__slider-item-gram">250г</p>
-                </div>
+                <button class="medical__slider-btn-prev">
+                  <img class="medical__slider-arrow-prev" src="images/medical-slider-arrow.svg" alt="arrow">
+                </button>
+                <button class="medical__slider-btn-next">
+                  <img class="medical__slider-arrow-next" src="images/medical-slider-arrow.svg" alt="arrow">
+                </button>
               </div>
               <div class="medical__procent">
                 <div class="medical__procent-item medical__procent-item-1">
@@ -397,7 +418,7 @@
     </section>
     <section class="reviews">
       <h2 class="reviews__title title">Что о нас говорят наши клиенты</h2>
-      <div class="swiper">
+      <div class="reviews__swiper">
         <div class="reviews__slider swiper-wrapper">
           <div class="reviews__item swiper-slide">
             <div class="reviews__info">
@@ -811,7 +832,6 @@
   <!--=include modal-menu.html-->
   <!--=include modal-discount.html-->
   <!--=include modal-program.html-->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 

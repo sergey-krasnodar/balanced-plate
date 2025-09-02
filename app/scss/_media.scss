@@ -1,0 +1,63 @@
+@media (max-width: 1390px) {
+  .top {
+    &__img {
+      max-width: 680px;
+      margin-left: 630px;
+    }
+  }
+
+  .ration-slider {
+    width: 1060px;
+
+    &__inner {
+      height: 490px;
+    }
+
+    &__item {
+      width: 190px !important;
+      height: 440px !important;
+    }
+  }
+
+  .medical {
+    &__top-content {
+      max-width: 500px;
+      margin-left: 255px;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .top {
+    &__img {
+      max-width: 590px;
+      margin-left: 510px;
+    }
+
+    &__discount {
+      max-width: 380px;
+    }
+
+    &__discount-program {
+      order: -1;
+    }
+
+    &__discount-img {
+      order: -1;
+    }
+
+    &__discount-btn {
+      margin: 0 auto;
+    }
+  }
+  .top-box{
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .program{
+    &__inner{
+      margin: 0 auto;
+      max-width: 888px;
+    }
+  }
+}
