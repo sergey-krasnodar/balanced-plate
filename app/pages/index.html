@@ -11,23 +11,30 @@
 <body>
   <header class="header">
     <div class="header__wrapper">
-      <a class="logo__link" href="#">
-        <img class="logo__img" src="images/logo.svg" alt="Логотип">
+      <div class="header__burger-menu">
+        <img class="header__burger-menu-img" src="images/burger-menu-left.svg" alt="burger-menu">
+      </div>
+      <a class="header__logo-link" href="#">
+        <img class="header__logo-img" src="images/logo.svg" alt="Логотип">
       </a>
-      <!--=include social-icon.html-->
+      <div class="header__social-icon">
+        <!--=include social-icon.html-->
+      </div>
       <div class="header__inner">
         <div class="header__info">
           <p class="header__phone">+7 988 860 8077</p>
           <p class="header__time time">9:00 - 21:00</p>
         </div>
-        <button data-open-btn class="header__btn">
-          <img class="header__btn-phone" src="images/phone-white.svg" alt="Кнопка телефон">
+        <button class="header__btn-white">
+          <img src="images/phone-white.svg" alt="phone">
+        </button>
+        <button class="header__btn-green">
+         <img src="images/phone-green.svg" alt="btn">
         </button>
       </div>
     </div>
   </header>
   <main>
-    <!--=include modal-phone.html-->
     <section class="top">
       <div class="container">
         <div class="top__inner">
@@ -86,7 +93,7 @@
         </div>
       </div>
     </section>
-    <section class="program">
+    <section id="program" class="program">
       <div class="container">
         <h2 class="program__title title">Програмы питания</h2>
         <p class="program__text">
@@ -150,7 +157,7 @@
         </div>
       </div>
     </section>
-    <section class="ration">
+    <section id="ration" class="ration">
       <div class="container">
         <div class="ration__inner">
           <h2 class="ration__title title">Пример дневного рациона</h2>
@@ -517,7 +524,7 @@
         <div class="swiper-button-next"></div>
       </div>
     </section>
-    <section class="questions">
+    <section id="questions" class="questions">
       <div class="container">
         <h2 class="questions__title title">Часто задаваемые вопросы</h2>
         <div class="questions__buttons">
@@ -807,15 +814,7 @@
       <h2 class="footer__title title">Правильно питаться - легко</h2>
       <a class="footer__link" href="tel:+79887405533">+7 988 860 8077</a>
       <div class="footer__social">
-        <a class="footer__social-link" href="#">
-          <img class="footer__social-img" src="images/social/whatsapp.svg" alt="icon whatsapp">
-        </a>
-        <a class="footer__social-link" href="#">
-          <img class="footer__social-img" src="images/social/telegram.svg" alt="icon telegram">
-        </a>
-        <a class="footer__social-link" href="#">
-          <img class="footer__social-img" src="images/social/viber.svg" alt="icon viber">
-        </a>
+        <!--=include social-icon-3.html-->
       </div>
       <p class="footer__time time">9:00 - 21:00</p>
       <div class="footer__social-block">
@@ -828,7 +827,8 @@
       </copy>
     </div>
   </footer>
-
+  <!--=include modal-phone.html-->
+  <!--=include modal-mini.html-->
   <!--=include modal-menu.html-->
   <!--=include modal-discount.html-->
   <!--=include modal-program.html-->
