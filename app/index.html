@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
   <title>Balanced Plate</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -793,7 +793,7 @@
         </div>
         <div class="ration-slider">
           <div class="ration-slider__inner swiper-wrapper">
-            <div id="ration-slider-item" class="ration-slider__item swiper-slide">
+            <div class="ration-slider__item swiper-slide">
               <h5 class="ration-slider__title">1 прием пищи</h5>
               <img class="ration-slider__img" src="images/ration/life-1.jpg" alt="Блюдо">
               <p class="ration-slider__name">
@@ -805,7 +805,7 @@
               </p>
               <p class="ration-slider__calories">387 ккал</p>
             </div>
-            <div id="ration-slider-item" class="ration-slider__item swiper-slide">
+            <div class="ration-slider__item swiper-slide">
               <h5 class="ration-slider__title">2 прием пищи</h5>
               <img class="ration-slider__img" src="images/ration/life-1.jpg" alt="Блюдо">
               <p class="ration-slider__name">
@@ -817,7 +817,7 @@
               </p>
               <p class="ration-slider__calories">76 ккал</p>
             </div>
-            <div id="ration-slider-item" class="ration-slider__item swiper-slide">
+            <div class="ration-slider__item swiper-slide">
               <h5 class="ration-slider__title">3 прием пищи</h5>
               <img class="ration-slider__img" src="images/ration/life-1.jpg" alt="Блюдо">
               <p class="ration-slider__name">
@@ -829,7 +829,7 @@
               </p>
               <p class="ration-slider__calories">241 ккал</p>
             </div>
-            <div id="ration-slider-item" class="ration-slider__item swiper-slide">
+            <div class="ration-slider__item swiper-slide">
               <h5 class="ration-slider__title">4 прием пищи</h5>
               <img class="ration-slider__img" src="images/ration/life-1.jpg" alt="Блюдо">
               <p class="ration-slider__name">
@@ -841,7 +841,7 @@
               </p>
               <p class="ration-slider__calories">165 ккал</p>
             </div>
-            <div id="ration-slider-item" class="ration-slider__item swiper-slide">
+            <div class="ration-slider__item swiper-slide">
               <h5 class="ration-slider__title">5 прием пищи</h5>
               <img class="ration-slider__img" src="images/ration/life-1.jpg" alt="Блюдо">
               <p class="ration-slider__name">
@@ -853,7 +853,7 @@
               </p>
               <p class="ration-slider__calories">441 ккал</p>
             </div>
-            <div id="ration-slider-item" class="ration-slider__item swiper-slide">
+            <div class="ration-slider__item swiper-slide">
               <h5 class="ration-slider__title">6 прием пищи</h5>
               <img class="ration-slider__img" src="images/ration/life-1.jpg" alt="Блюдо">
               <p class="ration-slider__name">
@@ -1484,219 +1484,112 @@
   </footer>
 
   <div class="modal-menu">
-
     <div class="modal-menu__container">
-
       <button class="modal-menu__close"></button>
-
       <div class="modal-menu__inner-title">
-
         <h2 class="modal-menu__top-title">Настройки меню</h2>
-
         <p class="modal-menu__subtitle">
-
           Выберите нежелательные ингредиенты, и мы исключим блюда с ними из меню
-
         </p>
-
       </div>
-
       <div class="modal-menu__choice">
-
         <h3 class="modal-menu__title">Выберите предпочтения</h3>
-
         <div class="modal-menu__form">
-
           <label for="check" class="modal-menu__label">Больше белка</label>
-
           <input name="check" class="modal-menu__input" type="checkbox">
-
         </div>
-
         <div class="modal-menu__form">
-
           <label for="check" class="modal-menu__label">Меньше сладкого (больше сытного)</label>
-
           <input name="check" class="modal-menu__input" type="checkbox">
-
         </div>
-
         <div class="modal-menu__form">
-
           <label for="check" class="modal-menu__label">Меньше молочного</label>
-
           <input name="check" class="modal-menu__input" type="checkbox">
-
         </div>
-
         <div class="modal-menu__form">
-
           <label for="check" class="modal-menu__label">Меньше специй</label>
-
           <input name="check" class="modal-menu__input" type="checkbox">
-
         </div>
-
       </div>
-
       <div class="modal-menu__allergens">
-
         <h3 class="modal-menu__title">Исключите аллергены</h3>
-
         <div class="modal-menu__form">
-
           <label for="check" class="modal-menu__label">Грецкий орех</label>
-
           <input name="check" class="modal-menu__input" type="checkbox">
-
         </div>
-
         <div class="modal-menu__form">
-
           <label for="check" class="modal-menu__label">Арахис</label>
-
           <input name="check" class="modal-menu__input" type="checkbox">
-
         </div>
-
         <div class="modal-menu__form">
-
           <label for="check" class="modal-menu__label">Орех мускатный</label>
-
           <input name="check" class="modal-menu__input" type="checkbox">
-
         </div>
-
         <div class="modal-menu__form">
-
           <label for="check" class="modal-menu__label">Мёд</label>
-
           <input name="check" class="modal-menu__input" type="checkbox">
-
         </div>
-
         <div class="modal-menu__form">
-
           <label for="check" class="modal-menu__label">Горчица зернистая</label>
-
           <input name="check" class="modal-menu__input" type="checkbox">
-
         </div>
-
         <div class="modal-menu__form">
-
           <label for="check" class="modal-menu__label">Шоколад</label>
-
           <input name="check" class="modal-menu__input" type="checkbox">
-
         </div>
-
         <div class="modal-menu__form">
-
           <label for="check" class="modal-menu__label">Творог натуральный</label>
-
           <input name="check" class="modal-menu__input" type="checkbox">
-
         </div>
-
         <div class="modal-menu__form">
-
           <label for="check" class="modal-menu__label">Творожные продукты</label>
-
           <input name="check" class="modal-menu__input" type="checkbox">
-
         </div>
-
         <div class="modal-menu__form">
-
           <label for="check" class="modal-menu__label">Лук в приправах (менее 2 гр)</label>
-
           <input name="check" class="modal-menu__input" type="checkbox">
-
         </div>
-
       </div>
-
       <div class="modal-menu__vegetables">
-
         <h3 class="modal-menu__title">Исключите овощи</h3>
-
         <div class="modal-menu__form">
-
           <label for="check" class="modal-menu__label">Сельдерей</label>
-
           <input name="check" class="modal-menu__input" type="checkbox">
-
         </div>
-
         <div class="modal-menu__form">
-
           <label for="check" class="modal-menu__label">Грибы</label>
-
           <input name="check" class="modal-menu__input" type="checkbox">
-
         </div>
-
         <div class="modal-menu__form">
-
           <label for="check" class="modal-menu__label">Болгарский перец</label>
-
           <input name="check" class="modal-menu__input" type="checkbox">
-
         </div>
-
         <div class="modal-menu__form">
-
           <label for="check" class="modal-menu__label">Брокколи</label>
-
           <input name="check" class="modal-menu__input" type="checkbox">
-
         </div>
-
         <div class="modal-menu__form">
-
           <label for="check" class="modal-menu__label">Кабачки</label>
-
           <input name="check" class="modal-menu__input" type="checkbox">
-
         </div>
-
         <div class="modal-menu__form">
-
           <label for="check" class="modal-menu__label">Картофель</label>
-
           <input name="check" class="modal-menu__input" type="checkbox">
-
         </div>
-
         <div class="modal-menu__form">
-
           <label for="check" class="modal-menu__label">Консервированная кукуруза</label>
-
           <input name="check" class="modal-menu__input" type="checkbox">
-
         </div>
-
       </div>
-
       <div class="modal-menu__sugar">
-
         <h3 class="modal-menu__title">Исключите сахар</h3>
-
         <div class="modal-menu__form">
-
           <label for="check" class="modal-menu__label">Сахар</label>
-
           <input name="check" class="modal-menu__input" type="checkbox">
-
         </div>
-
       </div>
-
       <button class="modal-menu__btn">Применить настройки</button>
-
     </div>
-
   </div>
   <dialog class="modal-discount">
     <div class="modal-discount__wrapper">

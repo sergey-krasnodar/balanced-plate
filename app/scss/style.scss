@@ -643,30 +643,6 @@ body{
       text-decoration: none;
     }
   }
-.ration-slider__btn-prev,
-.ration-slider__btn-next{
-  position: absolute;
-    width: 40px;
-    height: 40px;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('../images/arrow.svg');
-    background-repeat: no-repeat;
-  }
-  .ration-slider__btn-next{
-    left: 50px;
-    
-  }
-  .ration-slider__btn-prev{
-    right: 50px;
-    transform-origin: 50% 25%;
-    transform: rotate(180deg);
-}
-}
 
 .ration-slider{
   margin: 0 auto;
@@ -674,18 +650,15 @@ body{
   overflow: hidden;
   margin-bottom: 60px;
   &__inner{
-    padding: 0 10px;  
     height: 470px;
-    left: 0;
-    transition: .5s;
     align-items: center;
   }
   &__item{
-    width: 220px !important;
-    height: 410px !important;
-    padding: 20px !important;
-    box-shadow: 0 0 12px #d7d4d4;
-    border-radius: 20px !important;
+    box-sizing: border-box;
+    height: calc(100% - 10px);
+    padding: 20px;
+    box-shadow: inset 0 0 10px #d7d4d4;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
   }
@@ -714,7 +687,32 @@ body{
     font-size: 14px;
   }
 }
+.ration-slider__btn-prev,
+.ration-slider__btn-next {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../images/arrow.svg');
+  background-repeat: no-repeat;
+}
 
+.ration-slider__btn-next {
+  left: 50px;
+
+}
+
+.ration-slider__btn-prev {
+  right: 50px;
+  transform-origin: 50% 25%;
+  transform: rotate(180deg);
+}
+}
 
 .medical{
   position: relative;
@@ -803,6 +801,7 @@ body{
     margin-bottom: 30px;
     font-size: 28px;
     letter-spacing: 1px;
+    line-height: 100%;
   }
   &__choice{
     display: flex;
@@ -1054,13 +1053,12 @@ body{
   }
   &__swiper{
     overflow: hidden;
-    width: 120vw;
+    width: 100vw;
   }
   &__slider{
     height: 450px;
   }
   &__item{
-    max-width: 700px;
     box-sizing: border-box;
     background-color: #fff;
     border-radius: 40px;

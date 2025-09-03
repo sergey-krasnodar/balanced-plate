@@ -6,19 +6,6 @@
     }
   }
 
-  .ration-slider {
-    width: 1060px;
-
-    &__inner {
-      height: 490px;
-    }
-
-    &__item {
-      width: 190px !important;
-      height: 440px !important;
-    }
-  }
-
   .medical {
     &__top-content {
       max-width: 500px;
@@ -50,14 +37,38 @@
       margin: 0 auto;
     }
   }
-  .top-box{
+
+  .top-box {
     max-width: 800px;
     margin: 0 auto;
   }
-  .program{
-    &__inner{
+
+  .program {
+    &__inner {
       margin: 0 auto;
       max-width: 888px;
     }
+  }
+
+  .ration-slider {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .medical {
+    &__procent-item {
+      width: 280px;
+    }
+
+    &____slider {
+      max-width: 800px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .ration-slider {
+    max-width: 700px;
   }
 }

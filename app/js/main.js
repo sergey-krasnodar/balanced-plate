@@ -141,43 +141,68 @@ modalMenuContainer.addEventListener('click',(e)=>{
 
 const swiperRation = new Swiper(".ration-slider", {
   loop: true,
-  slidesPerView: 3,
-  spaceBetween: 40,
   navigation: {
     nextEl: ".ration-slider__btn-next",
     prevEl: ".ration-slider__btn-prev",
   },
+  breakpoints: {
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    1000: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    1300: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    }
+  }
 });
 
 const swiperMedical = new Swiper(".medical__slider", {
   loop: true,
-  slidesPerView: 4,
-  spaceBetween: 20,
   navigation: {
     nextEl: ".medical__slider-btn-next",
     prevEl: ".medical__slider-btn-prev",
   },
- 
+  breakpoints: {
+    964: {
+      slidesPerView: 4,
+      spaceBetween: 10
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 10
+    },
+    1300: {
+      slidesPerView: 4,
+      spaceBetween: 20
+    }
+  }
 });
 
 const reviewsSwiper = new Swiper(".reviews__swiper", {
-  slidesPerView: 2,
-  centeredSlides: true,
-  spaceBetween: 40,
   navigation: {
     nextEl: ".swiper-button-prev",
     prevEl: ".swiper-button-next",
   },
    breakpoints: {
         640: {
-          slidesPerView: 1,
+         slidesPerView: 1,
+         centeredSlides: false,
         },
         1000: {
           slidesPerView: 2,
+          spaceBetween: 20,
+          centeredSlides: true
         },
         1300: {
           slidesPerView: 2,
-        },
+          spaceBetween: 40,
+          centeredSlides: true
+        }
       }
 });
 
