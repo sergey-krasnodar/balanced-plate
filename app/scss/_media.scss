@@ -1,3 +1,6 @@
+
+
+
 @media (max-width: 1390px) {
   .container {
     max-width: 1190px;
@@ -107,29 +110,8 @@
     padding: 0 10px;
     margin: 0 auto;
   }
-  .top{
-    &__box-img {
-      max-width: 530px;
-      margin-left: 350px;
-    }
-    &__text{
-      max-width: 400px;
-    }
-
-  }
-
-  .ration-slider {
-    max-width: 700px;
-  }
-}
-
-@media (max-width: 964px) {
-  .container {
-      max-width: 764px;
-      padding: 0 10px;
-      margin: 0 auto;
-    }
   .header {
+    box-shadow: none;
     &__burger-menu {
       display: block;
       cursor: pointer;
@@ -155,19 +137,51 @@
       display: none;
     }
   }
+  .top{
+    &__box-img {
+      max-width: 530px;
+      margin-left: 350px;
+    }
+    &__text{
+      max-width: 400px;
+    }
+
+  }
+
+  .ration-slider {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 964px) {
+  .container {
+      max-width: 660px;
+      padding: 0 10px;
+      margin: 0 auto;
+    }
 
   .top {
     &__title {
       font-size: 36px;
       max-width: 500px;
     }
+    &__text{
+      color: #828282;
+    }
+    &__box-img{
+      max-width: 320px;
+      margin-left: 340px;
+      top: 250px;
+    }
 
     &__discount {
       max-width: 725px;
+      gap: 6px;
     }
 
     &__btn {
       margin: 0;
+      padding: 25px 25px;
     }
 
     &__discount-program {
@@ -179,28 +193,74 @@
     }
 
     &__discount-btn {
-      padding: 25px 40px;
+      padding: 25px 25px;
+      margin: 0;
     }
   }
 }
 
-@media (max-width: 850px) {
-  .container {
-      max-width: 650px;
-      padding: 0 10px;
-      margin: 0 auto;
-    }
+@media (max-width: 660px) {
+  .container{
+    max-width: 490px;
+  }
   .top{
+    padding-top: 20px;
     &__box-img{
       position: static;
       margin-left: 0;
+      max-width: 460px;
     }
     &__title{
-      margin: 0 auto;
+      margin-bottom: 0;
+      font-size: 34px;
     }
     &__text{
-      text-align: left;
-      max-width: 475px;
+      font-size: 16px;
+      max-width: 440px;
+      margin-bottom: 30px;
     }
-  }  
+    &__discount {
+      max-width: 380px;
+      margin: 0 auto;
+    }
+
+    &__discount-program {
+      order: -1;
+      margin-left: 6px;
+    }
+
+    &__discount-img {
+      order: -1;
+    }
+
+    &__discount-btn {
+      margin: 0 auto;
+      padding: 25px 60px;
+    }
+  }   
+}
+@media (max-width: 500px){
+  .container{
+    max-width: 400px;
+  }
+  .top{
+    &__title{
+      font-size: 26px;
+    }
+    &__discount{
+      justify-content: center;
+    }
+    &__discount-program{
+      font-size: 17px;
+    }
+    &__discount-img{
+      max-width: 164px;
+    }
+    &__discount-btn{
+      padding: 20px 65px;
+    }
+  }
+}
+@media (max-width: 430px){
+
 }
