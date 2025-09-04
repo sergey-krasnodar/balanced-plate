@@ -1,8 +1,14 @@
 @media (max-width: 1390px) {
+  .container {
+    max-width: 1190px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+
   .top {
-    &__img {
+    &__box-img {
       max-width: 680px;
-      margin-left: 630px;
+      margin-left: 610px;
     }
   }
 
@@ -15,10 +21,21 @@
 }
 
 @media (max-width: 1300px) {
+  .container {
+    max-width: 1100px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+
   .top {
-    &__img {
+    &__box-img {
       max-width: 590px;
       margin-left: 510px;
+      top: 200px;
+    }
+
+    &__text {
+      margin-bottom: 110px;
     }
 
     &__discount {
@@ -27,6 +44,7 @@
 
     &__discount-program {
       order: -1;
+      margin-left: 6px;
     }
 
     &__discount-img {
@@ -56,6 +74,22 @@
 }
 
 @media (max-width: 1200px) {
+  .container {
+    max-width: 1000px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+
+  .top {
+    &__box-img {
+      max-width: 550px;
+      margin-left: 435px;
+    }
+    &__text{
+      max-width: 500px;
+    }
+  }
+
   .medical {
     &__procent-item {
       width: 280px;
@@ -68,9 +102,20 @@
 }
 
 @media (max-width: 1000px) {
-  .top__img {
-    max-width: 530px;
-    margin-left: 450px;
+  .container {
+    max-width: 800px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+  .top{
+    &__box-img {
+      max-width: 530px;
+      margin-left: 350px;
+    }
+    &__text{
+      max-width: 400px;
+    }
+
   }
 
   .ration-slider {
@@ -79,14 +124,21 @@
 }
 
 @media (max-width: 964px) {
+  .container {
+      max-width: 764px;
+      padding: 0 10px;
+      margin: 0 auto;
+    }
   .header {
     &__burger-menu {
       display: block;
       cursor: pointer;
     }
-    &__social-icon.social-icon{
+
+    &__social-icon {
       display: none;
     }
+
     &__info {
       display: none;
     }
@@ -102,7 +154,53 @@
     &__btn-white {
       display: none;
     }
-
   }
 
+  .top {
+    &__title {
+      font-size: 36px;
+      max-width: 500px;
+    }
+
+    &__discount {
+      max-width: 725px;
+    }
+
+    &__btn {
+      margin: 0;
+    }
+
+    &__discount-program {
+      order: 0;
+    }
+
+    &__discount-img {
+      order: 0;
+    }
+
+    &__discount-btn {
+      padding: 25px 40px;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .container {
+      max-width: 650px;
+      padding: 0 10px;
+      margin: 0 auto;
+    }
+  .top{
+    &__box-img{
+      position: static;
+      margin-left: 0;
+    }
+    &__title{
+      margin: 0 auto;
+    }
+    &__text{
+      text-align: left;
+      max-width: 475px;
+    }
+  }  
 }

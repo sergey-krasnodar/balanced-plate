@@ -1,6 +1,6 @@
 
 
-const btnPhoneOpen = document.querySelectorAll('.header__btn-white');
+const btnPhoneOpen = document.querySelectorAll('.header__btn');
 const modalPhone = document.getElementById('modal');
 
 btnPhoneOpen.forEach((item) => {

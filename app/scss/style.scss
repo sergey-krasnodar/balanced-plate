@@ -359,16 +359,7 @@ body {
 }
 
 .top {
-  padding-top: 60px;
-
-  &__inner {
-    display: flex;
-    align-items: center;
-  }
-
-  &__content {
-    padding-top: 44px;
-  }
+  padding-top: 100px;
 
   &__title {
     font-size: 50px;
@@ -389,6 +380,7 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    max-width: 715px;
     min-height: 106px;
     gap: 15px;
     padding: 10px;
@@ -440,11 +432,12 @@ body {
     line-height: 127%;
   }
 
-  &__img {
+  &__box-img {
     position: absolute;
-    z-index: -1;
+    top: 30px;
     margin-left: 600px;
-    margin-top: 120px;
+    max-width: 775px;
+    z-index: -1;
   }
 }
 
@@ -1755,11 +1748,13 @@ body {
     font-size: 32px;
     margin-bottom: 40px;
   }
-  &__social-3{
+
+  &__social-3 {
     display: flex;
     justify-content: start;
   }
-  &__time{
+
+  &__time {
     margin: 20px 0 50px;
   }
 }
@@ -1769,10 +1764,12 @@ body {
   justify-content: center;
   gap: 20px;
 }
+
 .modal-mini.active {
   visibility: visible;
 }
-.modal-mini__wrapper.active{
+
+.modal-mini__wrapper.active {
   right: 0;
 }
 

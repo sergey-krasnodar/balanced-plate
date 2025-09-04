@@ -25,10 +25,10 @@
           <p class="header__phone">+7 988 860 8077</p>
           <p class="header__time time">9:00 - 21:00</p>
         </div>
-        <button class="header__btn-white">
+        <button class="header__btn-white header__btn">
           <img src="images/phone-white.svg" alt="phone">
         </button>
-        <button class="header__btn-green">
+        <button class="header__btn-green header__btn">
          <img src="images/phone-green.svg" alt="btn">
         </button>
       </div>
@@ -38,11 +38,17 @@
     <section class="top">
       <div class="container">
         <div class="top__inner">
-          <div class="top__content">
             <h1 class="top__title title">
               Сбалансированное
               питание на каждый день
             </h1>
+            <div class="top__box-img">
+              <picture>
+                <source srcset="images/top-bg-mini.jpg" media="(max-width: 964px)">
+                <source srcset="images/top-bg.jpg">
+                <img src="images/top-bg.jpg" alt="">
+              </picture>
+            </div>
             <p class="top__text">
               Правильное и здоровое питание стало доступно как никогда. Сосредоточтесь на ВАЖНОМ, а о правильном питании
               позаботимся мы!
@@ -59,8 +65,7 @@
             <p class="top__correction">
               От 6000 AMD в день
             </p>
-          </div>
-          <img class="top__img" src="images/top-bg.jpg" alt="Фото еды">
+          
         </div>
         <h2 class="top-box__title title">
           С нами все очень просто и удобно
