@@ -1,9 +1,4 @@
 @media (max-width: 1390px) {
-  .container {
-    max-width: 1190px;
-    padding: 0 10px;
-    margin: 0 auto;
-  }
 
   .top {
     &__box-img {
@@ -12,16 +7,19 @@
     }
   }
 
-  .top-box {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-
   .medical {
     &__top-content {
       max-width: 500px;
       margin-left: 255px;
     }
+  }
+
+  .program {
+    gap: 10px;
+  }
+
+  .ration-slider {
+    max-width: 950px;
   }
 }
 
@@ -60,18 +58,25 @@
       margin: 0 auto;
     }
   }
-  .top-box{
-    &__title{
+
+  .top-box {
+    justify-content: center;
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    &__title {
       text-align: center;
+    }
+    &__item{
+      margin-bottom: 0;
     }
   }
 
-
-
   .program {
     &__inner {
-      margin: 0 auto;
-      max-width: 888px;
+      justify-content: center;
+      gap: 40px;
     }
   }
 
@@ -103,7 +108,7 @@
       width: 280px;
     }
 
-    &____slider {
+    &___slider {
       max-width: 800px;
     }
   }
@@ -158,7 +163,7 @@
   }
 
   .ration-slider {
-    max-width: 700px;
+    max-width: 630px;
   }
 }
 
@@ -213,6 +218,12 @@
   }
 }
 
+@media (max-width: 820px) {
+  .ration-slider {
+    max-width: 500px;
+  }
+}
+
 @media (max-width: 670px) {
   .container {
     max-width: 490px;
@@ -261,11 +272,27 @@
     }
   }
 
+  .ration-slider {
+    max-width: 250px;
+  }
+
   .top-box {
     justify-content: center;
-
+    gap: 0;
     &__item {
       margin-bottom: 20px;
+    }
+    &__title{
+      padding-top: 40px;
+    }
+  }
+  .program{
+    padding: 40px 0;
+  }
+  .ration{
+    padding: 40px 0;
+    &__inner{
+      margin-bottom: 40px;
     }
   }
 }
@@ -299,8 +326,34 @@
       font-size: 20px;
     }
   }
+  .top-box{
+    margin-bottom: 20px;
+    &__title{
+      margin-bottom: 20px;
+    }
+  }
+  .ration{
+    .ration-slider__btn-prev {
+    right: 10px;
+    }
+
+    .ration-slider__btn-next {
+      left: 10px;
+    }
+  }
+  .program{
+    padding: 20px 0;
+    &__inner{
+      gap: 0;
+    }
+    &__item{
+      margin-bottom: 20px;
+    }
+  }
+  
 
   .modal-phone {
+    overflow-x: hidden;
     &__inner {
       width: 280px;
       padding: 40px 0;
@@ -312,13 +365,15 @@
   }
 
   .modal-discount {
+    overflow-x: hidden;
+    overflow: overley;
     &__wrapper {
-      width: 300px;
-      padding: 15px;
+      width: 280px;
+      padding: 10px;
     }
 
     &__img {
-      left: 15px;
+      left: 4px;
     }
 
     &__title {
@@ -332,6 +387,9 @@
     &__btn {
       font-size: 16px;
     }
+  }
+  .svg{
+    max-width: 300px;
   }
 }
 

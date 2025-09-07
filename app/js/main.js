@@ -181,7 +181,14 @@ const swiperRation = new Swiper(".ration-slider", {
     prevEl: ".ration-slider__btn-prev",
   },
   breakpoints: {
-    640: {
+    350:{
+      slidesPerView: 1,
+    },
+    700:{
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    820: {
       slidesPerView: 3,
       spaceBetween: 10,
     },

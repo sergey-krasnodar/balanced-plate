@@ -768,34 +768,34 @@ body {
       color: #12c10c;
       font-size: 14px;
     }
-  }
-
-  .ration-slider__btn-prev,
-  .ration-slider__btn-next {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('../images/arrow.svg');
-    background-repeat: no-repeat;
-  }
-
-  .ration-slider__btn-next {
-    left: 50px;
-
-  }
-
-  .ration-slider__btn-prev {
-    right: 50px;
-    transform-origin: 50% 25%;
-    transform: rotate(180deg);
+    &__btn-prev,
+    &__btn-next {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url('../images/arrow.svg');
+      background-repeat: no-repeat;
+    }
+  
+    &__btn-next {
+      left: 50px;
+  
+    }
+  
+    &__btn-prev {
+      right: 50px;
+      transform-origin: 50% 25%;
+      transform: rotate(180deg);
+    }
   }
 }
+
 
 .medical {
   position: relative;
@@ -1408,6 +1408,7 @@ body {
   opacity: 0;
   transition: all .4s linear;
   visibility: hidden;
+  overflow: hidden;
   position: fixed;
   top: 0;
   right: 0;
