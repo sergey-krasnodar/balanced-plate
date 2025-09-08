@@ -1153,11 +1153,11 @@ body {
   &__bg {
     position: absolute;
     bottom: -8px;
-    width: 2250px;
+    width: 100%;
     height: 217px;
     background-image: url('../images/medical-decor.svg');
     background-repeat: no-repeat;
-    background-position-x: -345px;
+    background-position-x: center;
     z-index: -1;
   }
 
