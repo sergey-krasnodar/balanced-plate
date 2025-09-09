@@ -12,6 +12,11 @@
       max-width: 500px;
       margin-left: 255px;
     }
+    &__top-img-box{
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
   }
 
   .program {
@@ -83,6 +88,11 @@
   .ration-slider {
     max-width: 800px;
   }
+  .medical{
+    &__top-content{
+      margin-left: 100px;
+    }
+  }
 }
 
 @media (max-width: 1200px) {
@@ -102,8 +112,24 @@
       max-width: 500px;
     }
   }
-
+  .medical-top{
+    &__blur{
+      max-width: 210px;
+    }
+  }
   .medical {
+    &__top-text{
+      max-width: 450px;
+    }
+    &__top-btn{
+      font-size: 24px;
+    }
+    &__top-img-box{
+      max-width: 500px;
+      &::before{
+        bottom: 30px;
+      }
+    }
     &__procent-item {
       width: 280px;
     }
@@ -164,6 +190,16 @@
 
   .ration-slider {
     max-width: 630px;
+  }
+  .medical{
+    &__top-img-box{
+      max-width: 470px;
+    }
+  }
+  .medical-top{
+    &__blur{
+      max-width: 170px;
+    }
   }
 }
 
