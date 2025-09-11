@@ -101,6 +101,7 @@ programButton.forEach(item => {
 
 let btnQuest = document.querySelectorAll('[data-btn-questions]');
 let questionsAccordion = document.querySelectorAll('.questions__accordion');
+const options = document.querySelectorAll('[data-option-click]');
 
 
 btnQuest.forEach((item) => {
@@ -112,6 +113,17 @@ btnQuest.forEach((item) => {
     })
     let btnAttr = item.dataset.btnQuestions;
     let openWin = document.querySelector(`#${btnAttr}`);
+    openWin.classList.remove('hidden');
+  })
+})
+
+options.forEach(item => {
+  item.addEventListener('click', ()=> {
+    questionsAccordion.forEach((elem) => {
+      elem.classList.add('hidden');
+    })
+    let optionAttr = item.dataset.optionClick;
+    let openWin = document.querySelector(`#${optionAttr}`);
     openWin.classList.remove('hidden');
   })
 })
@@ -181,10 +193,10 @@ const swiperRation = new Swiper(".ration-slider", {
     prevEl: ".ration-slider__btn-prev",
   },
   breakpoints: {
-    350:{
+    350: {
       slidesPerView: 1,
     },
-    700:{
+    700: {
       slidesPerView: 2,
       spaceBetween: 10,
     },

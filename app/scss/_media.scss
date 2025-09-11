@@ -1,4 +1,7 @@
 @media (max-width: 1390px) {
+  .container-2 {
+    max-width: 1190px;
+  }
 
   .top {
     &__box-img {
@@ -10,9 +13,10 @@
   .medical {
     &__top-content {
       max-width: 500px;
-      margin-left: 255px;
+      margin-left: 140px;
     }
-    &__top-img-box{
+
+    &__top-img-box {
       position: absolute;
       right: 0;
       bottom: 0;
@@ -70,10 +74,12 @@
     max-width: 800px;
     margin: 0 auto;
     margin-bottom: 40px;
+
     &__title {
       text-align: center;
     }
-    &__item{
+
+    &__item {
       margin-bottom: 0;
     }
   }
@@ -88,8 +94,9 @@
   .ration-slider {
     max-width: 800px;
   }
-  .medical{
-    &__top-content{
+
+  .medical {
+    &__top-content {
       margin-left: 100px;
     }
   }
@@ -102,6 +109,10 @@
     margin: 0 auto;
   }
 
+  .container-2 {
+    max-width: 1000px;
+  }
+
   .top {
     &__box-img {
       max-width: 550px;
@@ -112,24 +123,34 @@
       max-width: 500px;
     }
   }
-  .medical-top{
-    &__blur{
+
+  .medical-top {
+    &__blur {
       max-width: 210px;
     }
   }
+
   .medical {
-    &__top-text{
+    &__top-content {
+      margin-left: 60px;
+    }
+
+    &__top-text {
       max-width: 450px;
     }
-    &__top-btn{
+
+    &__top-btn {
       font-size: 24px;
     }
-    &__top-img-box{
+
+    &__top-img-box {
       max-width: 500px;
-      &::before{
+
+      &::before {
         bottom: 30px;
       }
     }
+
     &__procent-item {
       width: 280px;
     }
@@ -191,14 +212,22 @@
   .ration-slider {
     max-width: 630px;
   }
-  .medical{
-    &__top-img-box{
+
+  .medical {
+    &__top-img-box {
       max-width: 470px;
     }
   }
-  .medical-top{
-    &__blur{
+
+  .medical-top {
+    &__blur {
       max-width: 170px;
+    }
+  }
+
+  .questions {
+    &__accordion {
+      padding: 0 40px;
     }
   }
 }
@@ -315,19 +344,24 @@
   .top-box {
     justify-content: center;
     gap: 0;
+
     &__item {
       margin-bottom: 20px;
     }
-    &__title{
+
+    &__title {
       padding-top: 40px;
     }
   }
-  .program{
+
+  .program {
     padding: 40px 0;
   }
-  .ration{
+
+  .ration {
     padding: 40px 0;
-    &__inner{
+
+    &__inner {
       margin-bottom: 40px;
     }
   }
@@ -339,7 +373,7 @@
   }
 
   .title {
-    font-size: 23px;
+    font-size: 27px;
   }
 
   .top {
@@ -362,34 +396,41 @@
       font-size: 20px;
     }
   }
-  .top-box{
+
+  .top-box {
     margin-bottom: 20px;
-    &__title{
+
+    &__title {
       margin-bottom: 20px;
     }
   }
-  .ration{
+
+  .ration {
     .ration-slider__btn-prev {
-    right: 10px;
+      right: 10px;
     }
 
     .ration-slider__btn-next {
       left: 10px;
     }
   }
-  .program{
+
+  .program {
     padding: 20px 0;
-    &__inner{
+
+    &__inner {
       gap: 0;
     }
-    &__item{
+
+    &__item {
       margin-bottom: 20px;
     }
   }
-  
+
 
   .modal-phone {
     overflow-x: hidden;
+
     &__inner {
       width: 280px;
       padding: 40px 0;
@@ -403,6 +444,7 @@
   .modal-discount {
     overflow-x: hidden;
     overflow: overley;
+
     &__wrapper {
       width: 280px;
       padding: 10px;
@@ -424,13 +466,97 @@
       font-size: 16px;
     }
   }
-  .svg{
+
+  .svg {
     max-width: 300px;
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 400px) {
   .container {
+    max-width: 370px;
+  }
+
+  .container-2 {
     max-width: 350px;
+  }
+
+  .medical-top {
+    margin-bottom: 150px;
+
+    &__blur {
+      max-width: 0;
+    }
+
+    &__bg {
+      background-position: -1560px 0;
+      bottom: -160px;
+      height: 910px;
+    }
+  }
+
+  .medical {
+    &__top-content {
+      margin-left: 0;
+    }
+
+    &__top-title {
+      font-size: 34px;
+      font-family: 'Lato-Black';
+      color: #3c3c3c;
+      line-height: 34px;
+    }
+
+    &__top-text {
+      font-size: 20px;
+      line-height: 23px;
+      font-family: 'Lato-Light';
+    }
+
+    &__top-text-2 {
+      max-width: 225px;
+    }
+
+    &__top-img-box {
+      max-width: 350px;
+      right: -100px;
+      z-index: -2;
+      bottom: -70px;
+    }
+
+    &__top-btn {
+      font-size: 18px;
+      position: absolute;
+      bottom: -125px;
+    }
+  }
+
+  .questions {
+    &__buttons{
+      display: none;
+    }
+    &__select{
+      display: block;
+    }
+    &__accordion {
+      padding: 0;
+    }
+    &__title{
+      margin-bottom: 30px;
+    }
+    &__select{
+      margin-bottom: 30px;
+      text-align: center;
+      width: 100%;
+      padding: 15px 20px;
+      background-color: #12C10C;
+      border-radius: 43px;
+      color: #fff;
+      font-family: 'Lato-Regular';
+      font-size: 20px;
+      border: none;
+      outline: none;
+      text-align: left;
+    }
   }
 }

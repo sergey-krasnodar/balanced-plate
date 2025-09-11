@@ -286,7 +286,7 @@
                 разработали<br>
                 <span>15 уникальных диет</span> на все случаи жизни
               </p>
-              <p class="medical__top-text">
+              <p class="medical__top-text medical__top-text-2">  
                 Если вам нужна индивидуальная программа питания, просто свяжитесь с нами и мы поможем подобрать диету
               </p>
               <button class="medical__top-btn discount-btn">
@@ -539,11 +539,18 @@
         <h2 class="questions__title title">Часто задаваемые вопросы</h2>
         <div class="questions__buttons">
           <button data-btn-questions="thin" class="questions__btn questions__btn--active">Похудение</button>
-          <button data-btn-questions="product" class="questions__btn">Продукты</button>
-          <button data-btn-questions="rate" class="questions__btn">Тарифы</button>
-          <button data-btn-questions="payment" class="questions__btn">Оплата и доставка</button>
-          <button data-btn-questions="keeping" class="questions__btn">Хранение</button>
+          <button data-btn-questions="product" class="questions__btn btn-hidden">Продукты</button>
+          <button data-btn-questions="rate" class="questions__btn btn-hidden">Тарифы</button>
+          <button data-btn-questions="payment" class="questions__btn btn-hidden">Оплата и доставка</button>
+          <button data-btn-questions="keeping" class="questions__btn btn-hidden">Хранение</button>
         </div>
+        <select class="questions__select">
+          <option data-option-click value="thin">Похудение</option>
+          <option data-option-click value="product">Продукты</option>
+          <option data-option-click value="rate">Тарифы</option>
+          <option data-option-click value="payment">Оплата и доставка</option>
+          <option data-option-click value="keeping">Хранение</option>
+        </select>
         <div id="thin" data-questions-accordion class="questions__accordion">
           <details name="o" class="questions__details">
             <summary class="questions__summary">
