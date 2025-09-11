@@ -474,7 +474,7 @@
 
 @media (max-width: 400px) {
   .container {
-    max-width: 370px;
+    max-width: 375px;
   }
 
   .container-2 {
@@ -494,7 +494,9 @@
       bottom: -270px;
     }
   }
-
+  .medical-bottom{
+    text-align: center;
+  }
   .medical {
     &__top-content {
       margin-left: 0;
@@ -528,6 +530,45 @@
       font-size: 18px;
       position: absolute;
       bottom: -125px;
+    }
+    &__table{
+      padding: 40px 10px;
+      color: #000;
+    }
+    &__title{
+      font-family: 'Lato-Bold';
+      font-size: 20px;
+      line-height: 1.07;
+      letter-spacing: normal;
+      margin-bottom: 20px;
+    }
+    &__choice{
+      flex-direction: column;
+    }
+    &__choice-title{
+      font-size: 18px;
+    }
+    &__img{
+      display: none;
+    }
+    &__text{
+      display: none;
+    }
+    &__select{
+      font-size: 16px;
+    }
+    &__buttons-days{
+      justify-content: center;
+      gap: 10px;
+    }
+    &__btn-day{
+      padding: 10px 18px;
+      border-radius: 20px;
+      line-height: 1.55;
+    }
+    &__slider-wrapper{
+      display: flex;
+      flex-wrap: wrap;
     }
   }
 
