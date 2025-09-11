@@ -101,8 +101,7 @@ programButton.forEach(item => {
 
 let btnQuest = document.querySelectorAll('[data-btn-questions]');
 let questionsAccordion = document.querySelectorAll('.questions__accordion');
-const options = document.querySelectorAll('[data-option-click]');
-
+const questSelect = document.querySelector('.questions__select');
 
 btnQuest.forEach((item) => {
   item.addEventListener('click', () => {
@@ -117,16 +116,14 @@ btnQuest.forEach((item) => {
   })
 })
 
-options.forEach(item => {
-  item.addEventListener('click', ()=> {
-    questionsAccordion.forEach((elem) => {
+questSelect.addEventListener('change', function() {
+  questionsAccordion.forEach((elem) => {
       elem.classList.add('hidden');
     })
-    let optionAttr = item.dataset.optionClick;
-    let openWin = document.querySelector(`#${optionAttr}`);
-    openWin.classList.remove('hidden');
-  })
-})
+    document.querySelector(`#${this.value}`).classList.remove('hidden');
+});
+
+
 
 // modal-menu and modal-mini
 const modalMenu = document.querySelector('.modal-menu');
@@ -243,13 +240,13 @@ const reviewsSwiper = new Swiper(".reviews__swiper", {
     prevEl: ".swiper-button-next",
   },
   breakpoints: {
-    640: {
+    300: {
       slidesPerView: 1,
-      centeredSlides: false,
-    },
-    1000: {
-      slidesPerView: 2,
       spaceBetween: 20,
+    },
+    800: {
+      slidesPerView: 2,
+      spaceBetweezn: 20,
       centeredSlides: true
     },
     1300: {
