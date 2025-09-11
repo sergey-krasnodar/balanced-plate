@@ -178,7 +178,8 @@
     &__text {
       display: none;
     }
-    &__buttons-days{
+
+    &__buttons-days {
       justify-content: center;
     }
   }
@@ -244,35 +245,42 @@
     &__slider {
       width: 690px;
     }
-    &__inner{
+
+    &__inner {
       background-color: #fff;
       border-radius: 43px;
       padding: 21px 16px;
       display: flex;
       flex-direction: column;
     }
-    &__bottom{
+
+    &__bottom {
       display: contents;
     }
-    &__procent{
+
+    &__procent {
       gap: 15px;
       margin-bottom: 40px;
     }
-    &__bottom-discount{
+
+    &__bottom-discount {
       order: -1;
       margin-bottom: 40px;
     }
-    &__bottom-info{
+
+    &__bottom-info {
       max-width: 100%;
       order: -1;
       margin-bottom: 10px;
       text-align: center;
     }
-    &__bottom-order{
+
+    &__bottom-order {
       max-width: 100%;
       background-color: #e4e4e4;
     }
-    &__bottom-order-btn{
+
+    &__bottom-order-btn {
       padding: 25px 120px;
     }
   }
@@ -434,10 +442,12 @@
     &__slider {
       width: 390px;
     }
-    &__procent-item{
+
+    &__procent-item {
       font-size: 14px;
     }
-    &__bottom-order-btn{
+
+    &__bottom-order-btn {
       padding: 25px 25px;
     }
   }
@@ -483,11 +493,17 @@
 
   .ration {
     .ration-slider__btn-prev {
-      right: 10px;
+      right: 0px;
+      background-image: url('../images/arrow-black.svg');
+      width: 20px;
+      height: 20px;
     }
 
     .ration-slider__btn-next {
-      left: 10px;
+      left: 0px;
+      background-image: url('../images/arrow-black.svg');
+      width: 20px;
+      height: 20px;
     }
   }
 
@@ -512,7 +528,8 @@
     &__slider {
       width: 360px;
     }
-    &__procent-item{
+
+    &__procent-item {
       padding: 8px 8px;
       font-size: 13px;
     }
@@ -571,6 +588,16 @@
     max-width: 350px;
   }
 
+  .top {
+    &__discount-btn {
+      font-size: 16px;
+    }
+  }
+  .ration{
+    &__btn{
+      font-size: 20px;
+    }
+  }
   .medical-top {
     margin-bottom: 150px;
 
@@ -648,7 +675,7 @@
     }
 
     &__slider {
-      width: 335px;
+      width: 300px;
       text-align: left;
     }
 
@@ -735,6 +762,32 @@
       text-align: left;
       appearance: none;
 
+    }
+  }
+}
+@media (max-width: 355px){
+  .medical{
+    &__slider{
+      width: 265px;
+    }
+    &__inner{
+      padding: 13px 5px;
+    }
+    &__procent{
+      gap: 5px;
+    }
+    &__procent-item{
+      font-size: 11px;
+      padding: 8px 5px;
+    }
+    &__bottom-text-new{
+      font-size: 22px;
+    }
+    &__bottom-order{
+      padding: 8px 8px 8px 15px;
+    }
+    &__bottom-info{
+      font-size: 18px;
     }
   }
 }
