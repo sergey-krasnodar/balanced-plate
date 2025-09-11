@@ -219,18 +219,25 @@ const swiperMedical = new Swiper(".medical__slider", {
     prevEl: ".medical__slider-btn-prev",
   },
   breakpoints: {
-    964: {
-      slidesPerView: 4,
-      spaceBetween: 10
+    300: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+      grid:{
+        rows: 4,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
     },
     1200: {
       slidesPerView: 4,
-      spaceBetween: 10
+      spaceBetween: 10,
     },
     1300: {
       slidesPerView: 4,
-      spaceBetween: 20
-    }
+      spaceBetween: 20,
+    },
   }
 });
 
