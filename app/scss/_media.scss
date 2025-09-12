@@ -86,6 +86,9 @@
     &__top-content {
       margin-left: 100px;
     }
+    &__top-img-box{
+      right: -30px;
+    }
   }
 }
 
@@ -118,16 +121,8 @@
       margin-left: 60px;
     }
 
-    &__top-text {
-      max-width: 450px;
-    }
-
-    &__top-btn {
-      font-size: 24px;
-    }
-
     &__top-img-box {
-      max-width: 500px;
+      right: 20px;
 
       &::before {
         bottom: 30px;
@@ -222,7 +217,18 @@
 
   .medical {
     &__top-img-box {
-      max-width: 470px;
+      right: -70px;
+    }
+    &__top-content{
+      margin-left: 0;
+      margin-bottom: 55px;
+    }
+    &__top-text{
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    &__top-btn{
+      font-size: 20px;
     }
 
     &__slider {
