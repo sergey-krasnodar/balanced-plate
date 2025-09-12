@@ -10,19 +10,6 @@
     }
   }
 
-  .medical {
-    &__top-content {
-      max-width: 500px;
-      margin-left: 140px;
-    }
-
-    &__top-img-box {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-    }
-  }
-
   .program {
     gap: 10px;
   }
@@ -107,10 +94,6 @@
     max-width: 1000px;
     padding: 0 10px;
     margin: 0 auto;
-  }
-
-  .container-2 {
-    max-width: 1000px;
   }
 
   .top {
