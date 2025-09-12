@@ -243,8 +243,8 @@ const swiperMedical = new Swiper(".medical__slider", {
 
 const reviewsSwiper = new Swiper(".reviews__swiper", {
   navigation: {
-    nextEl: ".swiper-button-prev",
-    prevEl: ".swiper-button-next",
+    nextEl: ".reviews-button-prev",
+    prevEl: ".reviews-button-next",
   },
   breakpoints: {
     300: {
