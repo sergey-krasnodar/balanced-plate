@@ -224,11 +224,12 @@
       margin-bottom: 55px;
     }
     &__top-text{
-      font-size: 20px;
+      font-size: 22px;
       margin-bottom: 20px;
+      max-width: 485px;
     }
     &__top-btn{
-      font-size: 20px;
+      font-size: 22px;
     }
 
     &__slider {
@@ -340,6 +341,12 @@
   .medical {
     &__slider {
       width: 490px;
+    }
+    &__top-img-box{
+      width: 370px;
+    }
+    &__top-text{
+      max-width: 380px;
     }
   }
 }
@@ -618,17 +625,17 @@
     }
 
     &__top-text {
-      font-size: 20px;
       line-height: 23px;
       font-family: 'Lato-Light';
+      max-width: 265px;
     }
 
     &__top-text-2 {
-      max-width: 225px;
+      max-width: 163px;
     }
 
     &__top-img-box {
-      max-width: 350px;
+      max-width: 325px;
       right: -100px;
       z-index: -2;
       bottom: -70px;
