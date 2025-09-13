@@ -1,747 +1,773 @@
-@media (max-width: 1390px) {
-  .container-2 {
-    max-width: 1190px;
-  }
-
-  .top {
-    &__box-img {
-      max-width: 680px;
-      margin-left: 610px;
-    }
-  }
-
-  .program {
-    gap: 10px;
-  }
-
-  .ration-slider {
-    max-width: 950px;
-  }
-}
-
-@media (max-width: 1300px) {
-  .container {
-    max-width: 1100px;
-    padding: 0 10px;
-    margin: 0 auto;
-  }
-
-  .top {
-    &__box-img {
-      max-width: 590px;
-      margin-left: 510px;
-      top: 200px;
-    }
-
-    &__text {
-      margin-bottom: 110px;
-    }
-
-    &__discount {
-      max-width: 380px;
-    }
-
-    &__discount-program {
-      order: -1;
-      margin-left: 6px;
-    }
-
-    &__discount-img {
-      order: -1;
-    }
-
-    &__discount-btn {
-      margin: 0 auto;
-    }
-  }
-
-  .top-box {
-    justify-content: center;
-    gap: 40px;
-    max-width: 800px;
-    margin: 0 auto;
-    margin-bottom: 40px;
-
-    &__title {
-      text-align: center;
-    }
-
-    &__item {
-      margin-bottom: 0;
-    }
-  }
-
-  .program {
-    &__inner {
-      justify-content: center;
-      gap: 40px;
-    }
-  }
-
-  .ration-slider {
-    max-width: 800px;
-  }
-
-  .medical {
-    &__top-content {
-      margin-left: 100px;
-    }
-
-    &__top-img-box {
-      right: -30px;
-    }
-
-    &__top-perec {
-      left: 620px;
-    }
-
-    &__top-broccoli {
-      left: 580px;
-    }
-  }
-}
-
-@media (max-width: 1200px) {
-  .container {
-    max-width: 1000px;
-    padding: 0 10px;
-    margin: 0 auto;
-  }
-
-  .top {
-    &__box-img {
-      max-width: 550px;
-      margin-left: 435px;
-    }
-
-    &__text {
-      max-width: 500px;
-    }
-  }
-
-  .medical-top {
-    &__blur {
-      max-width: 210px;
-    }
-  }
-
-  .medical {
-    &__top-content {
-      margin-left: 60px;
-    }
-
-    &__top-img-box {
-      right: 20px;
-
-      &::before {
-        bottom: 30px;
-      }
-    }
-
-    &__procent-item {
-      width: 280px;
-    }
-
-    &__slider {
-      width: 890px;
-    }
-
-    &__slider-wrapper {
-      height: 800px;
-    }
-
-    &__choice {
-      flex-direction: column;
-    }
-
-    &__choice-title {
-      font-size: 25px;
-    }
-
-    &__img {
-      display: none;
-    }
-
-    &__text {
-      display: none;
-    }
-
-    &__buttons-days {
-      justify-content: center;
-    }
-
-    &__top-perec {
-      bottom: 25px;
-      left: 500px;
-    }
-
-    &__broccoli {
-      left: 580px;
-    }
-  }
-}
-
-@media (max-width: 1000px) {
-  .container {
-    max-width: 800px;
-    padding: 0 10px;
-    margin: 0 auto;
-  }
-
-  .header {
-    box-shadow: none;
-
-    &__burger-menu {
-      display: block;
-      cursor: pointer;
-    }
-
-    &__social-icon {
-      display: none;
-    }
-
-    &__info {
-      display: none;
-    }
-
-    &__btn-green {
-      display: block;
-      border: none;
-      padding: 0;
-      background: transparent;
-      cursor: pointer;
-    }
-
-    &__btn-white {
-      display: none;
-    }
-  }
-
-  .top {
-    &__box-img {
-      max-width: 530px;
-      margin-left: 350px;
-    }
-
-    &__text {
-      max-width: 400px;
-    }
-
-  }
-
-  .ration-slider {
-    max-width: 630px;
-  }
-
-  .medical {
-    &__top-img-box {
-      right: -70px;
-    }
-
-    &__top-content {
-      margin-left: 0;
-      margin-bottom: 55px;
-    }
-
-    &__top-text {
-      font-size: 22px;
-      margin-bottom: 20px;
-      max-width: 485px;
-    }
-
-    &__top-btn {
-      font-size: 22px;
-    }
-
-    &__slider {
-      width: 690px;
-    }
-
-    &__inner {
-      background-color: #fff;
-      border-radius: 43px;
-      padding: 21px 16px;
-      display: flex;
-      flex-direction: column;
-    }
-
-    &__bottom {
-      display: contents;
-    }
-
-    &__procent {
-      gap: 15px;
-      margin-bottom: 40px;
-    }
-
-    &__bottom-discount {
-      order: -1;
-      margin-bottom: 40px;
-    }
-
-    &__bottom-info {
-      max-width: 100%;
-      order: -1;
-      margin-bottom: 10px;
-      text-align: center;
-    }
-
-    &__bottom-order {
-      max-width: 100%;
-      background-color: #e4e4e4;
-    }
-
-    &__bottom-order-btn {
-      padding: 25px 120px;
-    }
-
-    &__top-perec {
-      left: 425px;
-    }
-
-    &__top-broccoli {
-      left: 450px;
-    }
-  }
-
-  .medical-top {
-    &__blur {
-      max-width: 170px;
-    }
-  }
-
-  .questions {
-    &__accordion {
-      padding: 0 40px;
-    }
-  }
-}
-
-@media (max-width: 964px) {
-  .container {
-    max-width: 660px;
-    padding: 0 10px;
-    margin: 0 auto;
-  }
-
-  .title {
-    font-size: 28px;
-  }
-
-  .top {
-    &__title {
-      max-width: 500px;
-    }
-
-    &__text {
-      color: #828282;
-    }
-
-    &__box-img {
-      max-width: 320px;
-      margin-left: 340px;
-      top: 250px;
-    }
-
-    &__discount {
-      max-width: 725px;
-      gap: 6px;
-    }
-
-    &__btn {
-      margin: 0;
-      padding: 25px 25px;
-    }
-
-    &__discount-program {
-      order: 0;
-    }
-
-    &__discount-img {
-      order: 0;
-    }
-
-    &__discount-btn {
-      padding: 25px 25px;
-      margin: 0;
-    }
-  }
-
-  .medical {
-    &__slider {
-      width: 490px;
-    }
-
-    &__top-img-box {
-      width: 370px;
-    }
-
-    &__top-text {
-      max-width: 380px;
-    }
-
-    &__top-perec {
-      bottom: 10px;
-      width: 42px;
-      height: 40px;
-      left: 360px;
-    }
-
-    &__top-broccoli {
-      width: 82px;
-      height: 52px;
-      left: 350px;
-      top: 240px;
-    }
-
-    &__top-tomat {
-      top: 440px;
-      right: -35px;
-      width: 84px;
-      height: 89px;
-    }
-  }
-}
-
-@media (max-width: 820px) {
-  .ration-slider {
-    max-width: 500px;
-  }
-}
-
-@media (max-width: 670px) {
-  .container {
-    max-width: 490px;
-  }
-
-  .title {
-    font-size: 28px;
-  }
-
-  .top {
-    padding-top: 20px;
-
-    &__inner {
-      text-align: center;
-    }
-
-    &__box-img {
-      position: static;
-      margin-left: 0;
-      max-width: 460px;
-    }
-
-    &__title {
-      margin-bottom: 0;
-    }
-
-    &__text {
-      font-size: 16px;
-      max-width: 440px;
-      margin-bottom: 30px;
-    }
-
-    &__discount {
-      max-width: 380px;
-      margin: 0 auto;
-    }
-
-    &__discount-program {
-      order: -1;
-      margin-left: 6px;
-    }
-
-    &__discount-img {
-      order: -1;
-    }
-
-    &__discount-btn {
-      margin: 0 auto;
-      padding: 25px 60px;
-    }
-  }
-
-  .ration-slider {
-    max-width: 250px;
-  }
-
-  .top-box {
-    justify-content: center;
-    gap: 0;
-
-    &__item {
-      margin-bottom: 20px;
-    }
-
-    &__title {
-      padding-top: 40px;
-    }
-  }
-
-  .program {
-    padding: 40px 0;
-  }
-
-  .ration {
-    padding: 40px 0;
-
-    &__inner {
-      margin-bottom: 40px;
-    }
-  }
-
-  .medical-top {
-    margin-bottom: 150px;
-
-    &__blur {
-      max-width: 0;
-    }
-
-    &__bg {
-      background-image: url('../images/medical-decor1.svg');
-      background-position: 0 0;
-      bottom: -190px;
-    }
-  }
-
-  .medical {
-    &__slider {
-      width: 390px;
-    }
-
-    &__procent-item {
-      font-size: 14px;
-    }
-
-    &__bottom-order-btn {
-      padding: 25px 25px;
-    }
-
-    &__title {
-      font-size: 23px;
-    }
-
-    &__top-title {
-      text-align: center;
-    }
-
-    &__top-text {
-      max-width: 300px;
-    }
-
-    &__top-text-2 {
-      max-width: 250px;
-    }
-
-    &__top-img-box {
-      max-width: 325px;
-      right: -65px;
-      bottom: 10px;
-      z-index: -2;
-    }
-
-    &__top-btn {
-      font-size: 27px;
-      position: absolute;
-      bottom: -115px;
-      right: 0;
-      left: 0;
-    }
-
-    &__top-perec {
-      left: 240px;
-    }
-
-    &__top-broccoli {
-      left: 40px;
-      top: 500px;
-    }
-
-    &__top-tomat {
-      top: 480px;
-    }
-  }
-}
-
-@media (max-width: 500px) {
-  .container {
-    max-width: 400px;
-  }
-
-  .title {
-    font-size: 27px;
-  }
-
-  .top {
-    &__discount {
-      justify-content: center;
-      gap: 0;
-    }
-
-    &__discount-program {
-      font-size: 17px;
-    }
-
-    &__discount-img {
-      max-width: 164px;
-    }
-
-    &__discount-btn {
-      margin-top: 10px;
-      padding: 20px 65px;
-      font-size: 20px;
-    }
-  }
-
-  .top-box {
-    margin-bottom: 20px;
-
-    &__title {
-      margin-bottom: 20px;
-    }
-  }
-
-  .ration {
-    .ration-slider__btn-prev {
-      right: 0px;
-      background-image: url('../images/arrow-black.svg');
-      width: 20px;
-      height: 20px;
-    }
-
-    .ration-slider__btn-next {
-      left: 0px;
-      background-image: url('../images/arrow-black.svg');
-      width: 20px;
-      height: 20px;
-    }
-  }
-
-  .program {
-    padding: 20px 0;
-
-    &__inner {
-      gap: 0;
-    }
-
-    &__item {
-      margin-bottom: 20px;
-    }
-  }
-
-  .medical {
-    &__table {
-      padding: 40px 10px;
-      color: #000;
-    }
-
-    &__slider {
-      width: 360px;
-    }
-
-    &__title {
-      font-size: 20px;
-    }
-
-    &__procent-item {
-      padding: 8px 8px;
-      font-size: 13px;
-    }
-
-    &__top-btn {
-      font-size: 20px;
-    }
-
-    &__top-title {
-      margin-bottom: 30px;
-    }
-
-    &__top-text {
-      font-size: 20px;
-      line-height: 1.1;
-    }
-
-    &__top-text-2 {
-      max-width: 225px;
-    }
-
-    &__top-img-box {
-      max-width: 270px;
-    }
-
-    &__top-broccoli {
-      top: 400px;
-    }
-
-    &__top-tomat {
-      top: 400px;
-      right: -25px;
-      width: 74px;
-      height: 79px;
-    }
-
-    &__top-perec {
-      bottom: -30px;
-    }
-
-  }
-
-  .modal-phone {
-    overflow-x: hidden;
-
-    &__inner {
-      width: 280px;
-      padding: 40px 0;
-    }
-
-    &__title {
-      width: 150px;
-    }
-  }
-
-  .modal-discount {
-    overflow-x: hidden;
-    overflow: overley;
-
-    &__wrapper {
-      width: 280px;
-      padding: 10px;
-    }
-
-    &__img {
-      left: 4px;
-    }
-
-    &__title {
-      font-size: 20px;
-    }
-
-    &__text {
-      font-size: 16px;
-    }
-
-    &__btn {
-      font-size: 16px;
-    }
-  }
-
-  .svg {
-    max-width: 300px;
-  }
-}
+// @media (max-width: 1390px) {
+//   .container-2 {
+//     max-width: 1190px;
+//   }
+
+//   .top {
+//     &__box-img {
+//       max-width: 680px;
+//       margin-left: 610px;
+//     }
+//   }
+
+//   .program {
+//     gap: 10px;
+//   }
+
+//   .ration-slider {
+//     max-width: 950px;
+//   }
+// }
+
+// @media (max-width: 1300px) {
+//   .container {
+//     max-width: 1100px;
+//     padding: 0 10px;
+//     margin: 0 auto;
+//   }
+
+//   .top {
+//     &__box-img {
+//       max-width: 590px;
+//       margin-left: 510px;
+//       top: 200px;
+//     }
+
+//     &__text {
+//       margin-bottom: 110px;
+//     }
+
+//     &__discount {
+//       max-width: 380px;
+//     }
+
+//     &__discount-program {
+//       order: -1;
+//       margin-left: 6px;
+//     }
+
+//     &__discount-img {
+//       order: -1;
+//     }
+
+//     &__discount-btn {
+//       margin: 0 auto;
+//     }
+//   }
+
+//   .top-box {
+//     justify-content: center;
+//     gap: 40px;
+//     max-width: 800px;
+//     margin: 0 auto;
+//     margin-bottom: 40px;
+
+//     &__title {
+//       text-align: center;
+//     }
+
+//     &__item {
+//       margin-bottom: 0;
+//     }
+//   }
+
+//   .program {
+//     &__inner {
+//       justify-content: center;
+//       gap: 40px;
+//     }
+//   }
+
+//   .ration-slider {
+//     max-width: 800px;
+//   }
+
+//   .medical {
+//     &__top-content {
+//       margin-left: 100px;
+//     }
+
+//     &__top-img-box {
+//       right: -30px;
+//     }
+
+//     &__top-perec {
+//       left: 620px;
+//     }
+
+//     &__top-broccoli {
+//       left: 580px;
+//     }
+//   }
+// }
+
+// @media (max-width: 1200px) {
+//   .container {
+//     max-width: 1000px;
+//     padding: 0 10px;
+//     margin: 0 auto;
+//   }
+
+//   .top {
+//     &__box-img {
+//       max-width: 550px;
+//       margin-left: 435px;
+//     }
+
+//     &__text {
+//       max-width: 500px;
+//     }
+//   }
+
+//   .medical-top {
+//     &__blur {
+//       max-width: 210px;
+//     }
+//   }
+
+//   .medical {
+//     &__top-content {
+//       margin-left: 60px;
+//     }
+
+//     &__top-img-box {
+//       right: 20px;
+
+//       &::before {
+//         bottom: 30px;
+//       }
+//     }
+
+//     &__procent-item {
+//       width: 280px;
+//     }
+
+//     &__slider {
+//       width: 890px;
+//     }
+
+//     &__slider-wrapper {
+//       height: 800px;
+//     }
+
+//     &__choice {
+//       flex-direction: column;
+//     }
+
+//     &__choice-title {
+//       font-size: 25px;
+//     }
+
+//     &__img {
+//       display: none;
+//     }
+
+//     &__text {
+//       display: none;
+//     }
+
+//     &__buttons-days {
+//       justify-content: center;
+//     }
+
+//     &__top-perec {
+//       bottom: 25px;
+//       left: 500px;
+//     }
+
+//     &__broccoli {
+//       left: 580px;
+//     }
+//   }
+// }
+
+// @media (max-width: 1000px) {
+//   .container {
+//     max-width: 800px;
+//     padding: 0 10px;
+//     margin: 0 auto;
+//   }
+
+//   .header {
+//     box-shadow: none;
+
+//     &__burger-menu {
+//       display: block;
+//       cursor: pointer;
+//     }
+
+//     &__social-icon {
+//       display: none;
+//     }
+
+//     &__info {
+//       display: none;
+//     }
+
+//     &__btn-green {
+//       display: block;
+//       border: none;
+//       padding: 0;
+//       background: transparent;
+//       cursor: pointer;
+//     }
+
+//     &__btn-white {
+//       display: none;
+//     }
+//   }
+
+//   .top {
+//     &__box-img {
+//       max-width: 530px;
+//       margin-left: 350px;
+//     }
+
+//     &__text {
+//       max-width: 400px;
+//     }
+
+//   }
+
+//   .ration-slider {
+//     max-width: 630px;
+//   }
+
+//   .medical {
+//     &__top-img-box {
+//       right: -70px;
+//     }
+
+//     &__top-content {
+//       margin-left: 0;
+//       margin-bottom: 55px;
+//     }
+
+//     &__top-text {
+//       font-size: 22px;
+//       margin-bottom: 20px;
+//       max-width: 485px;
+//     }
+
+//     &__top-btn {
+//       font-size: 22px;
+//     }
+
+//     &__slider {
+//       width: 690px;
+//     }
+
+//     &__inner {
+//       background-color: #fff;
+//       border-radius: 43px;
+//       padding: 21px 16px;
+//       display: flex;
+//       flex-direction: column;
+//     }
+
+//     &__bottom {
+//       display: contents;
+//     }
+
+//     &__procent {
+//       gap: 15px;
+//       margin-bottom: 40px;
+//     }
+
+//     &__bottom-discount {
+//       order: -1;
+//       margin-bottom: 40px;
+//     }
+
+//     &__bottom-info {
+//       max-width: 100%;
+//       order: -1;
+//       margin-bottom: 10px;
+//       text-align: center;
+//     }
+
+//     &__bottom-order {
+//       max-width: 100%;
+//       background-color: #e4e4e4;
+//     }
+
+//     &__bottom-order-btn {
+//       padding: 25px 120px;
+//     }
+
+//     &__top-perec {
+//       left: 425px;
+//     }
+
+//     &__top-broccoli {
+//       left: 450px;
+//     }
+//   }
+
+//   .medical-top {
+//     &__blur {
+//       max-width: 170px;
+//     }
+//   }
+
+//   .questions {
+//     &__accordion {
+//       padding: 0 40px;
+//     }
+//   }
+// }
+
+// @media (max-width: 964px) {
+//   .container {
+//     max-width: 660px;
+//     padding: 0 10px;
+//     margin: 0 auto;
+//   }
+
+//   .title {
+//     font-size: 28px;
+//   }
+
+//   .top {
+//     &__title {
+//       max-width: 500px;
+//     }
+
+//     &__text {
+//       color: #828282;
+//     }
+
+//     &__box-img {
+//       max-width: 320px;
+//       margin-left: 340px;
+//       top: 250px;
+//     }
+
+//     &__discount {
+//       max-width: 725px;
+//       gap: 6px;
+//     }
+
+//     &__btn {
+//       margin: 0;
+//       padding: 25px 25px;
+//     }
+
+//     &__discount-program {
+//       order: 0;
+//     }
+
+//     &__discount-img {
+//       order: 0;
+//     }
+
+//     &__discount-btn {
+//       padding: 25px 25px;
+//       margin: 0;
+//     }
+//   }
+
+//   .medical {
+//     &__slider {
+//       width: 490px;
+//     }
+
+//     &__top-img-box {
+//       width: 370px;
+//     }
+
+//     &__top-text {
+//       max-width: 380px;
+//     }
+
+//     &__top-perec {
+//       bottom: 10px;
+//       width: 42px;
+//       height: 40px;
+//       left: 360px;
+//     }
+
+//     &__top-broccoli {
+//       width: 82px;
+//       height: 52px;
+//       left: 350px;
+//       top: 240px;
+//     }
+
+//     &__top-tomat {
+//       top: 440px;
+//       right: -35px;
+//       width: 84px;
+//       height: 89px;
+//     }
+//   }
+// }
+
+// @media (max-width: 820px) {
+//   .ration-slider {
+//     max-width: 500px;
+//   }
+// }
+
+// @media (max-width: 670px) {
+//   .container {
+//     max-width: 490px;
+//   }
+
+//   .title {
+//     font-size: 28px;
+//   }
+
+//   .top {
+//     padding-top: 20px;
+
+//     &__inner {
+//       text-align: center;
+//     }
+
+//     &__box-img {
+//       position: static;
+//       margin-left: 0;
+//       max-width: 460px;
+//     }
+
+//     &__title {
+//       margin-bottom: 0;
+//     }
+
+//     &__text {
+//       font-size: 16px;
+//       max-width: 440px;
+//       margin-bottom: 30px;
+//     }
+
+//     &__discount {
+//       max-width: 380px;
+//       margin: 0 auto;
+//     }
+
+//     &__discount-program {
+//       order: -1;
+//       margin-left: 6px;
+//     }
+
+//     &__discount-img {
+//       order: -1;
+//     }
+
+//     &__discount-btn {
+//       margin: 0 auto;
+//       padding: 25px 60px;
+//     }
+//   }
+
+//   .ration-slider {
+//     max-width: 250px;
+//   }
+
+//   .top-box {
+//     justify-content: center;
+//     gap: 0;
+
+//     &__item {
+//       margin-bottom: 20px;
+//     }
+
+//     &__title {
+//       padding-top: 40px;
+//     }
+//   }
+
+//   .program {
+//     padding: 40px 0;
+//   }
+
+//   .ration {
+//     padding: 40px 0;
+
+//     &__inner {
+//       margin-bottom: 40px;
+//     }
+//   }
+
+//   .medical-top {
+//     margin-bottom: 150px;
+
+//     &__blur {
+//       max-width: 0;
+//     }
+
+//     &__bg {
+//       background-image: url('../images/medical-decor1.svg');
+//       background-position: 0 0;
+//       bottom: -190px;
+//     }
+//   }
+
+//   .medical {
+//     &__slider {
+//       width: 390px;
+//     }
+
+//     &__procent-item {
+//       font-size: 14px;
+//     }
+
+//     &__bottom-order-btn {
+//       padding: 25px 25px;
+//     }
+
+//     &__title {
+//       font-size: 23px;
+//     }
+
+//     &__top-title {
+//       text-align: center;
+//     }
+
+//     &__top-text {
+//       max-width: 300px;
+//     }
+
+//     &__top-text-2 {
+//       max-width: 250px;
+//     }
+
+//     &__top-img-box {
+//       max-width: 325px;
+//       right: -65px;
+//       bottom: 10px;
+//       z-index: -2;
+//     }
+
+//     &__top-btn {
+//       font-size: 27px;
+//       position: absolute;
+//       bottom: -115px;
+//       right: 0;
+//       left: 0;
+//     }
+
+//     &__top-perec {
+//       left: 240px;
+//     }
+
+//     &__top-broccoli {
+//       left: 40px;
+//       top: 500px;
+//     }
+
+//     &__top-tomat {
+//       top: 480px;
+//     }
+//   }
+// }
+
+// @media (max-width: 500px) {
+//   .container {
+//     max-width: 400px;
+//   }
+
+//   .title {
+//     font-size: 27px;
+//   }
+
+//   .top {
+//     &__discount {
+//       justify-content: center;
+//       gap: 0;
+//     }
+
+//     &__discount-program {
+//       font-size: 17px;
+//     }
+
+//     &__discount-img {
+//       max-width: 164px;
+//     }
+
+//     &__discount-btn {
+//       margin-top: 10px;
+//       padding: 20px 65px;
+//       font-size: 20px;
+//     }
+//   }
+
+//   .top-box {
+//     margin-bottom: 20px;
+
+//     &__title {
+//       margin-bottom: 20px;
+//     }
+//   }
+
+//   .ration {
+//     .ration-slider__btn-prev {
+//       right: 0px;
+//       background-image: url('../images/arrow-black.svg');
+//       width: 20px;
+//       height: 20px;
+//     }
+
+//     .ration-slider__btn-next {
+//       left: 0px;
+//       background-image: url('../images/arrow-black.svg');
+//       width: 20px;
+//       height: 20px;
+//     }
+//   }
+
+//   .program {
+//     padding: 20px 0;
+
+//     &__inner {
+//       gap: 0;
+//     }
+
+//     &__item {
+//       margin-bottom: 20px;
+//     }
+//   }
+
+//   .medical {
+//     &__table {
+//       padding: 40px 10px;
+//       color: #000;
+//     }
+
+//     &__slider {
+//       width: 360px;
+//     }
+
+//     &__title {
+//       font-size: 20px;
+//     }
+
+//     &__procent-item {
+//       padding: 8px 8px;
+//       font-size: 13px;
+//     }
+
+//     &__top-btn {
+//       font-size: 20px;
+//     }
+
+//     &__top-title {
+//       margin-bottom: 30px;
+//     }
+
+//     &__top-text {
+//       font-size: 20px;
+//       line-height: 1.1;
+//     }
+
+//     &__top-text-2 {
+//       max-width: 225px;
+//     }
+
+//     &__top-img-box {
+//       max-width: 270px;
+//     }
+
+//     &__top-broccoli {
+//       top: 400px;
+//     }
+
+//     &__top-tomat {
+//       top: 400px;
+//       right: -25px;
+//       width: 74px;
+//       height: 79px;
+//     }
+
+//     &__top-perec {
+//       bottom: -30px;
+//     }
+
+//   }
+
+//   .modal-phone {
+//     overflow-x: hidden;
+
+//     &__inner {
+//       width: 280px;
+//       padding: 40px 0;
+//     }
+
+//     &__title {
+//       width: 150px;
+//     }
+//   }
+
+//   .modal-discount {
+//     overflow-x: hidden;
+//     overflow: overley;
+
+//     &__wrapper {
+//       width: 280px;
+//       padding: 10px;
+//     }
+
+//     &__img {
+//       left: 4px;
+//     }
+
+//     &__title {
+//       font-size: 20px;
+//     }
+
+//     &__text {
+//       font-size: 16px;
+//     }
+
+//     &__btn {
+//       font-size: 16px;
+//     }
+//   }
+
+//   .svg {
+//     max-width: 300px;
+//   }
+// }
 
 @media (max-width: 400px) {
-  .container {
-    max-width: 390px;
-  }
-
-  .container-2 {
-    max-width: 350px;
-  }
+  
 
   .top {
+    &__inner{
+      padding: 0 15px;
+    }
+    &__title{
+      text-align: left;
+      font-size: 28px;
+      line-height: 28px;
+      margin-bottom: 15px;
+    }
+    &__box-img {
+      position: static;
+      max-width: 320px;
+      min-height: 232px;
+      margin-left: 0;
+    }
+    &__text{
+      font-size: 14px;
+      line-height: 17px;
+      margin-top: 20px;
+    }
+    &__discount{
+      padding: 15px;
+      justify-content: center;
+      gap: 0;
+    }
     &__discount-btn {
-      font-size: 16px;
+      font-size: 26px;
+      width: 100%;
+      padding: 20px 0;
+      order: 2;
+      margin-top: 20px;
+    }
+    &__discount-img{
+      width: 160px;
     }
   }
 
@@ -935,64 +961,64 @@
   }
 }
 
-@media (max-width: 360px) {
-  .medical {
-    &__slider {
-      width: 265px;
-    }
+// @media (max-width: 360px) {
+//   .medical {
+//     &__slider {
+//       width: 265px;
+//     }
 
-    &__inner {
-      padding: 13px 5px;
-    }
+//     &__inner {
+//       padding: 13px 5px;
+//     }
 
-    &__procent {
-      gap: 5px;
-    }
+//     &__procent {
+//       gap: 5px;
+//     }
 
-    &__procent-item {
-      font-size: 11px;
-      padding: 8px 5px;
-    }
+//     &__procent-item {
+//       font-size: 11px;
+//       padding: 8px 5px;
+//     }
 
-    &__bottom-text-new {
-      font-size: 22px;
-    }
+//     &__bottom-text-new {
+//       font-size: 22px;
+//     }
 
-    &__bottom-order {
-      padding: 8px 8px 8px 15px;
-    }
+//     &__bottom-order {
+//       padding: 8px 8px 8px 15px;
+//     }
 
-    &__bottom-info {
-      font-size: 18px;
-    }
+//     &__bottom-info {
+//       font-size: 18px;
+//     }
 
-    &__top-btn {
-      font-size: 16px;
-    }
+//     &__top-btn {
+//       font-size: 16px;
+//     }
 
-    &__top-text {
-      line-height: 1.1;
-      max-width: 215px;
-    }
+//     &__top-text {
+//       line-height: 1.1;
+//       max-width: 215px;
+//     }
 
-    &__top-text-2 {
-      max-width: 140px;
-    }
+//     &__top-text-2 {
+//       max-width: 140px;
+//     }
 
-    &__top-img-box {
-      width: 370px;
-    }
+//     &__top-img-box {
+//       width: 370px;
+//     }
 
-    &__title {
-      font-size: 18px;
-    }
+//     &__title {
+//       font-size: 18px;
+//     }
 
-    &__choice-title {
-      font-size: 20px;
-    }
+//     &__choice-title {
+//       font-size: 20px;
+//     }
 
-    &__bottom-discount {
-      font-size: 23px;
-    }
-  }
-}
+//     &__bottom-discount {
+//       font-size: 23px;
+//     }
+//   }
+// }
