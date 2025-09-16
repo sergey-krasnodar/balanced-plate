@@ -98,10 +98,6 @@
     &__top-broccoli {
       left: 580px;
     }
-
-    &__bottom-box-text {
-      margin-right: 10px;
-    }
   }
 
   .questions {
@@ -615,6 +611,7 @@
 
     &__procent-item {
       font-size: 14px;
+      padding: 8px 8px;
     }
 
     &__bottom-order-btn {
@@ -684,6 +681,9 @@
 
     &__discount-btn {
       margin: 20px 20px 20px 0px
+    }
+    &__discount-img{
+      width: 230px;
     }
   }
 
@@ -887,9 +887,7 @@
     &__title {
       font-size: 25px;
       line-height: 28px;
-      margin: 0 40px;
-      padding-top: 40px;
-      margin-bottom: 0;
+      margin-bottom: 30px;
     }
   }
 
@@ -1039,64 +1037,80 @@
   }
 }
 
-// @media (max-width: 360px) {
-//   .medical {
-//     &__slider {
-//       width: 265px;
-//     }
+@media (max-width: 360px) {
+  .top{
+    &__discount{
+      max-width: 310px;
+    }
+    &__discount-img{
+      width: 160px;
+    }
+  }
+  .medical {
+    &__slider {
+      width: 265px;
+    }
 
-//     &__inner {
-//       padding: 13px 5px;
-//     }
+    &__inner {
+      padding: 13px 5px;
+    }
 
-//     &__procent {
-//       gap: 5px;
-//     }
+    &__procent {
+      gap: 5px;
+    }
 
-//     &__procent-item {
-//       font-size: 11px;
-//       padding: 8px 5px;
-//     }
+    &__procent-item {
+      font-size: 11px;
+      padding: 8px 5px;
+    }
 
-//     &__bottom-text-new {
-//       font-size: 22px;
-//     }
+    &__bottom-text-new {
+      font-size: 22px;
+    }
 
-//     &__bottom-order {
-//       padding: 8px 8px 8px 15px;
-//     }
+    &__bottom-order {
+      padding: 8px 8px 8px 15px;
+    }
 
-//     &__bottom-info {
-//       font-size: 18px;
-//     }
+    &__bottom-info {
+      font-size: 18px;
+    }
 
-//     &__top-btn {
-//       font-size: 16px;
-//     }
+    &__top-btn {
+      font-size: 16px;
+    }
 
-//     &__top-text {
-//       line-height: 1.1;
-//       max-width: 215px;
-//     }
+    &__top-text {
+      line-height: 1.1;
+      max-width: 215px;
+    }
 
-//     &__top-text-2 {
-//       max-width: 140px;
-//     }
+    &__top-text-2 {
+      max-width: 140px;
+    }
 
-//     &__top-img-box {
-//       width: 370px;
-//     }
+    &__top-img-box {
+      width: 370px;
+    }
+    &__top-tomat{
+      top: 750px;
+    }
 
-//     &__title {
-//       font-size: 18px;
-//     }
+    &__top-broccoli{
+      top: 670px;
+      left: 20px;
+    }
 
-//     &__choice-title {
-//       font-size: 20px;
-//     }
+    &__title {
+      font-size: 18px;
+    }
 
-//     &__bottom-discount {
-//       font-size: 23px;
-//     }
-//   }
-// }
+    &__choice-title {
+      font-size: 20px;
+    }
+
+    &__bottom-discount {
+      font-size: 23px;
+    }
+  }
+}
