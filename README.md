@@ -1,1 +1,1 @@
-https://sergey-krasnodar.github.io/balanced-plate/app/index.html
+https://sergey-krasnodar.github.io/balanced-plate-old/app/index.html
